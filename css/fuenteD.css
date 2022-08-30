@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00587a;
+}
+
+h1{
+    font-size: 6em;
+    font-family: 'Walter Turncoat', cursive;
+    color: azure;
+}

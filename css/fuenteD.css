@@ -1,14 +1,20 @@
 body {
     display: flex;
-    font-size: 2em;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #00587a;
+    background-color: #042431;
 }
 
 h1{
-    font-size: 6em;
-    font-family: 'Walter Turncoat', cursive;
-    color: azure;
+    font-size: 10em;
+    font-family: 'Waltograph', cursive;
+    font-weight: 600;
+    color: rgb(219, 225, 230);
+
+}
+
+@font-face {
+    font-family:'waltograph' ;
+    src: url(../fonts/Walter.ttf);
 }

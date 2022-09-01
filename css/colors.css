@@ -1,42 +1,45 @@
-.box-1 {
+.box {
+    display: inline-block;
     height: 300px;
     width: 300px;
+    text-align: center;
+    margin: 15px;
+}
+
+.box-1 {
     background-color: coral;
-    display: inline-block;
 }
 
 .box-2 {
-    height: 300px;
-    width: 300px;
     background-color: saddlebrown;
-    display: inline-block;
 }
 
 .box-3 {
-    height: 300px;
-    width: 300px;
     background-color: darkcyan;
-    display: inline-block;
 }
 
-.box-4, .box-5, .box-6 {
-    display: inline-block;
-}
+
 
 .box-4 { 
-    height: 300px;
-    width: 300px;
     background-color: rgb(198, 49, 74);
 }
 
 .box-5 {
-    height: 300px;
-    width: 300px;
     background-color: rgb(19, 58, 29);
 }
 
 .box-6 {
-    height: 300px;
-    width: 300px;
     background-color: rgb(192, 74, 240);
+}
+
+.box-7 {
+    background-color: #9B92F0;
+}
+
+.box-8 {
+    background-color: #F2DF91;
+}
+
+.box-9 {
+    background-color: #FC3044;
 }

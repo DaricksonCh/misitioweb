@@ -1,0 +1,25 @@
+/* Solo dios sabe lo que estoy apunto de hacer */
+.letter-style {
+ font-size: 2em;
+ color: rgb(0, 0 , 0);
+}
+
+.name-style {
+    /* color: rgb(64, 64, 64,.8); */
+}
+/* Ejemplo de clase de elemento */
+h2 {
+    color: #834;
+}
+/* Ejemplo de clase atada */
+h2.name-style {
+    color: blue;
+}
+/* Ejemplo de clase no atada  */
+.text-style {
+    color: darkcyan;
+}
+/* Llamando id */
+#textstyle {
+    color: violet;
+}

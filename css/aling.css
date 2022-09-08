@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 400px;
+    color: #fff;
+    background-color:#000 ;
+    margin: 20px;
+}
+
+.right {
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
+    margin: 20px;
+    background-color: rgb(168, 21, 21);
+    color: #fff;
+}
+
+.center {
+    text-align: center;
+    margin: 20px;
+}
+
+.justify {
+    text-align: justify;
+}

@@ -1,31 +1,38 @@
-* {
-    padding: 0;
-    margin: 0;
+.box {
+    display: inline-block;
+    width: 180px;
+    height: 200px;
+    margin: 20px;
+    padding: 15px;
+    color: white;
 }
 
-.left {
+.box-1 {
+    border: 5px solid  #246664;
     text-align: left;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    font-weight: 400px;
-    color: #fff;
-    background-color:#000 ;
-    margin: 20px;
+    background-color: rgb(27, 69 , 67);
 }
 
-.right {
+.box-2 {
+    border: 5px dotted #0A291C;
     text-align: right;
-    font-family: 'Gill Sans', 'Gill Sans MT',  'Trebuchet MS', sans-serif;
-    margin: 20px;
-    background-color: rgb(168, 21, 21);
-    color: #fff;
+    background-color: rgb(21, 80, 52);
 }
 
-.center {
+.box-3 {
+    border: 4px dashed #1B1A35;
     text-align: center;
-    margin: 20px;
+    background-color: rgb(46, 44, 93);
 }
 
-.justify {
+.box-4 {
+    border: 8px double #7980A5 ;
     text-align: justify;
+    background-color: rgb(32, 35, 52);
+}
+
+.box-5 {
+    border: 5px groove #2B133D;
+    text-indent: 2em;
+    background-color: rgb(125, 55, 171);
 }

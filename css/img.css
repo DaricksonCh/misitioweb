@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* .box-pro {
+    display: inline-flex;
+    text-align: center;
+} */
+
+.img-size{
+    width: 30%;
+}
+
+.box {
+    display: inline;
+    background-color: aqua;
+}
+
+

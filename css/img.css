@@ -3,19 +3,29 @@
     margin: 0;
 }
 
-
-/* .box-pro {
-    display: inline-flex;
+.h{
+    display: inline;
     text-align: center;
-} */
-
-.img-size{
-    width: 30%;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
 }
 
-.box {
-    display: inline;
-    background-color: aqua;
+.img-size{
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+.box-pro{
+    text-align: center;
+    width: 30%;
+    margin: 2%;
+}
+
+h3, p{
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 

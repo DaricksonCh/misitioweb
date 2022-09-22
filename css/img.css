@@ -1,31 +1,35 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.h{
+.title{
     display: inline;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 5px;
+    color: #C3C5C6;
 }
 
 .img-size{
     width: 100%;
+    border-radius: 20px;
 }
 
-.container {
-    display: flex;
-}
 .box-pro{
+    display: inline-block; 
     text-align: center;
-    width: 30%;
-    margin: 2%;
+    width: 25%;
+    margin: 3.8%;
 }
 
 h3, p{
     margin: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
+.title h1, h2, li {
+    background-color: #262A2D;
+}
+li {
+    color: #C3C5C6;
+}

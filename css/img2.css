@@ -11,16 +11,17 @@
     color: #C3C5C6;
 }
 
-.img-size{
-    width: 100%;
-    border-radius: 20px;
-}
-
 .box-pro{
     display: inline-block; 
-    text-align: center;
-    width: 25%; 
-    margin: 3.8%;
+    margin: 42px;
+    vertical-align: top;
+    width: 550px;
+}
+
+.img-size{
+    width: 100%;
+    border-radius: 6%;
+    border: 5px solid black;
 }
 
 h3, p{
@@ -30,6 +31,4 @@ h3, p{
 .title h1, h2, li {
     background-color: #262A2D;
 }
-li {
-    color: #C3C5C6;
-}
+

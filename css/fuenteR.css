@@ -5,12 +5,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-weight: 800;
     background-color: black;
 }
 
 h1 {
-    font-size: 15em;
+    font-size: 14em;
     font-family:  'DS-Digital', cursive;
     color: rgb(202, 126, 32);
 }

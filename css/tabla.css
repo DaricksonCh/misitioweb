@@ -12,7 +12,7 @@ body{
     background-color: #262A2D;
     text-align: center;
     color: #C3C5C6;
-    height: 50px;
+    height: 60px;
     font-size: 30px;  
 }
 
@@ -25,6 +25,9 @@ body{
 .nav a {
     color: bisque;
     text-decoration: bisque;
+}
+.nav li a:hover {
+    background-color: #434343;
 }
 
 h1, h2 {
@@ -53,3 +56,13 @@ table {
 img{
     font-size: 20px;
 }
+.plan {
+    text-align: center;
+    margin: 15px 300px;
+}   
+
+.tras td {
+    background-color: #9BF00B;
+    border-collapse: collapse;
+}
+

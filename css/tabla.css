@@ -51,7 +51,6 @@ table {
 .table-style{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 img{
     font-size: 20px;
@@ -66,3 +65,41 @@ img{
     border-collapse: collapse;
 }
 
+.producto  {
+    border: 1px solid rgb(179, 179, 179);
+    padding: 60px;
+    text-align: center;
+    color: #E0F5F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pp {
+    background-color: rgb(0, 139, 139);
+}
+.dd {
+    background-color: rgb(12, 155, 76);
+}
+.cc {
+    background-color: rgb(66, 167, 255);
+}
+.ss {
+    background-color: rgb(255, 123, 0);
+}
+.oo {
+    background-color: rgb(85, 6, 98);
+}
+.borde, td, th {
+    border: 1px solid rgb(179, 179, 179);
+    padding: 10px 12px;
+}
+.ng {
+    color: #D01623;
+}
+.gg {
+    color: #92C45C;
+}
+.ns{
+    color: #262A2D;
+}

@@ -30,6 +30,7 @@ body{
 h1{
     text-align: center;
     margin: 10px;
+    justify-content: center;
 }
 label{
     display: block;
@@ -60,7 +61,7 @@ form{
     width: 100%;
 }
 fieldset{
-    width: 500px;
+    width: 45%;
 }
 input{
     margin: 5px;

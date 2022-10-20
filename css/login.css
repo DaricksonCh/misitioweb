@@ -44,6 +44,7 @@ h2{
 }
 .logo:hover {
     -webkit-transform:scale(1.3);transform:scale(1.3);
+    cursor: pointer;
 }
 .pa{
     text-align: center;

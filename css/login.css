@@ -50,6 +50,9 @@ h2{
     margin: 5px;
     color: rgb(228, 206, 206);
 }
+.a:hover {
+    color: #0091ff;
+}
 
 
 .login{
@@ -111,11 +114,15 @@ fieldset{
 input[type="submit"] {
     height: 50px;
     border: 1px black;
-    background-color: rgb(64, 64, 60.8);
+    background-color: rgb(70, 70, 70);
     border-radius: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0091ff;
+    transition: .9s;
 }
 
 

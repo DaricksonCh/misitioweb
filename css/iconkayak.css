@@ -34,4 +34,15 @@ hr {
     border-radius: 8px;
     list-style: none;
 }
+.lil{
+    width: 25%;
+    border-radius: 10%;
+}
 
+.lil:hover {
+    background-color: rgb(230, 235, 239);
+}
+
+.li:hover .icon-style{
+    color: rgb(2, 8, 8);
+}

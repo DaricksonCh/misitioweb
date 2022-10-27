@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.position{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    position: static;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-1 {
+    background-color: rgb(117, 210, 100);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+}
+
+.box-2 {
+    background-color: rgb(80, 120, 150);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+}
+.box-3{
+    background-color: rgb(210, 100, 10);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+}
+
+.box-4 {
+    background-color: rgb(22, 96, 146);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+}
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+.contenedor {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.fixed{
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    position: fixed;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1-fixed {
+    background-color: rgb(117, 210, 100);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+    top: 0;
+    left: 0;
+}
+
+.box-2-fixed {
+    background-color: rgb(80, 120, 150);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+    bottom: 0;
+    right: 0;
+}
+.box-3-fixed {
+    background-color: rgb(95, 62, 35);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+    right: 0;
+    top: 0;
+}
+.box-4-fixed {
+    background-color: rgb(22, 96, 146);
+    box-shadow: 20px 13px 10px rgb(48, 48, 48);
+    left: 0;
+    bottom: 0;
+}
+
+.fixedd {
+    width: 50px;
+    height: 150px;
+    position: fixed;
+    border-radius: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-0 {
+    background-color: rgb(191, 191, 197);
+    color: rgb(131, 35, 131);
+    right: 0;
+    bottom: 41%;
+}
+
+.contenedor-1 {
+    background-color: rgb(64, 64, 64);
+    position: absolute;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    justify-content: right;
+}
+
+.absolute {
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 20px;
+    color: aliceblue;
+}

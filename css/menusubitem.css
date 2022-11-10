@@ -1,47 +1,72 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-
-.nav {
-    background-color: rgb(64, 64, 64);
+/* Estilos Generales */
+.nav a{
+    text-decoration: none;
     color: aliceblue;
-    width: 100%;
-    height: 50px;
-    text-align: center;
-
+    display: block;
+    padding: 0 4.3em;
+    font-size: 17px;
 }
-.menu {
-    font-size: 1.7em;
-    display: inline-block;
-    padding: 9px;
-    cursor: pointer;
+.nav ul{
+    display: table;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    list-style: none;
+}
+/* Menu primer nivel */
+
+nav > ul > li{
+    float: left;
+    width: 268px;
+    line-height: 70px;
+}
+nav li {
+    position: relative;
+}
+nav li li {
+    max-height: 0;
+    overflow: hidden;
+}
+nav li:hover > ul > li{
+    visibility: visible;
+    max-height: 500px;
+    overflow: visible;
+    background-color: rgb(64, 64, 64);
+}
+
+nav ul ul ul {
+    top: 0;
+    left: 100%;
 }
 .menu:hover{
-    background-color: rgb(100, 90, 80);
+    background-color: rgb(102, 100, 97);
+}
+.img{
+    position: absolute;
+    top: 5px;
+    width: 60px;
+    left: 91%;
 }
 
-button {
-    margin: 20px;
-    justify-content: center;
-    width: 200px;
-    height: 50px;
-    padding: 20px;
-    background-color: blueviolet;
+.nav > ul > li > a{
+    border-right: 2px solid black;
+}
+.class{
+    top: -20%;
+    left: 85%;
+    position: absolute;
+    width: 100px;
+    color: aliceblue;
     cursor: pointer;
 }
-.dos {
-    display: none;
-    background-color: aqua;
-    color: aliceblue;
-    top: 50%;
-    left: 50%;
+img:hover{
+    padding: 1px;
 }
-.menu:hover .dos {
-    display: flex;
-    position: relative;
-    background-color: aqua;
-    top: 50%;
-    left: 50%;
-}
+

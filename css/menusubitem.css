@@ -70,3 +70,15 @@ img:hover{
     padding: 1px;
 }
 
+li a:hover {
+    border-bottom: 5px solid rgb(207, 191, 191);
+}
+
+p{
+    top: 150%;
+    color: aliceblue;
+    font-size: 1.5em;
+    padding: 12px 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

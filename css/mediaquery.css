@@ -1,73 +1,92 @@
 *{
-    padding: 0;
     margin: 0;
-}
-
-.nav{
-    background-color: rgb(64, 64, 64);
-    height: 77px;
-    width: 100%;
-    position: fixed;
-    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .bar-menu{
-    color: aliceblue;
-    font-size: 2em;
-    padding: 0 20px;
-    cursor: pointer;
-    display: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    position: fixed;
+    visibility: hidden;
+    top: 15px;
+    left: 30px;
 }
-a{
-    text-decoration: none;
-    color: aliceblue;
-    display: block;
-    font-size: 1.4em;
-}
-li{
-    display: inline-block;
-    padding: 25px 45px;
-    list-style: none;
-    display: none;
-}
-li:hover{
-    background-color: black;
-    cursor: pointer;
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(48, 48, 48,.9);
+    height: 80px;
 }
 .main-menu{
-    text-align: right;
+    list-style: none;
+}
+a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.item-main-menu:hover{
+    cursor: pointer;
 }
 p{
-    margin-top: 250px;
+    margin: 120px 60px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.3em;
 }
-.main-menu-visible{
-    display: block;
+.item-main-menu{
+    display: inline-block;
+    margin: 25px 50px;
+    padding: 0 30px;
 }
-
-@media only screen and (max-width: 1152px){
-    .bar-menu{
-        position: fixed;
-        display: flex;
-        justify-content: right;
-        right: .1px;
-        background-color: rgb(64, 64, 64);
-        height: 77px;
-        width: 100%;
-    }
-    .bar-menu:hover{
-        background-color: brown;
-    }
-    li{
-        display: block;
-        background-color: rgb(106, 111, 106);
+@media only screen and (max-width:1152px) {
+    .main-menu{
+        background-color: rgb(96, 96, 96,.9);
+        margin-top: 81px;
+        padding: 0;
         text-align: center;
-        margin-bottom: 1px;
     }
-    li:hover{
-        background-color: rgb(64, 64, 64);
+    .main-nav{
+        height: 80px;;
     }
     .main-menu{
-        margin-top: 80px;
+        display: none; 
     }
-
+    .main-menu-visible{
+        display: block;
+        background-color: rgb(48, 48, 48,.9);
+        margin-top: 81px;
+        padding: 0;
+        margin-bottom: 1px;
+    }
+    .menu-1{
+        width: 100%;
+        display: block;
+        text-align: center;
+        visibility: visible;
+        border-bottom: 1px solid white;
+        line-height: 70px;
+        padding: 0;
+    }
+    .bar-menu{
+        visibility: visible;
+        left: 92%;
+    }
+    .bar-menu:hover{
+        cursor: pointer;
+    }
+    .item-main-menu{
+        display: block;
+        color: black;
+        text-align: center;
+        position: relative;
+    }
+    .item-main-menu:hover{
+        border-bottom: 1px solid white;
+    }
 }
-

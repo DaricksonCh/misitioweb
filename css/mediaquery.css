@@ -43,6 +43,7 @@ p{
     display: inline-block;
     margin: 25px 50px;
     padding: 0 30px;
+    float: right;
 }
 @media only screen and (max-width:1152px) {
     .main-menu{

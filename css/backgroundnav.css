@@ -36,7 +36,7 @@ nav{
     display: flex;
     position: absolute;
 }
-.frist-item{
+.frist-item:hover{
     border-bottom: 1px solid aliceblue;
 }
 p{

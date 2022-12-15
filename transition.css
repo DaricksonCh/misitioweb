@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 30px;
+}
+
+.box-1{
+    background-color: rgb(93, 93, 163);
+    transition: background-color 1000ms;
+}
+.box-1:hover{
+    cursor: pointer;
+    background-color: rgb(57, 124, 102);
+}
+.box-2{
+    background-color: rgb(103, 30, 117);
+    transition: margin-left 1.5s;
+}
+.box-2:hover{
+    cursor: pointer;
+    margin-left: 300px;
+    position: relative;
+}
+.box-3{
+    position: fixed;
+    background-color: aquamarine;
+    transition: left 1s;
+}
+.box3Old{
+    left: 720px;
+}
+.box3New{
+    left: 1050px;
+}
+
+.bol1{
+    width: 200px;
+    height: 80px;
+    background-color: rgb(115, 118, 121);
+    border-radius: 350px; 
+    box-shadow: 10px 5px 10px;
+    margin: 0 auto;
+}
+.bol2New{
+    background-color: rgb(31, 168, 77);
+    transition: left 1.8s;
+}
+.bol2{
+    position: relative;
+    top:5%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(224, 228, 231);
+    border-radius: 100%;
+    box-shadow: -5px 5px 10px;
+    transition: left 1.8s;
+}
+.bolNew{
+    left: 120px;
+    box-shadow: 5px 5px 10px;
+}
+.bolOld{
+    left: 10px;
+}
+.box-5{
+    background-color: rgb(25, 133, 97);
+    border-radius: 300px;
+    transition: all 1.2s;
+    bottom: -200px;
+    left: -10%;
+    position: fixed;
+}
+
+.box-5:hover{
+    width: 600px;
+    height:600px;
+    border-radius: 600px;
+}

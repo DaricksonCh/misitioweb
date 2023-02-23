@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* -------HEADER----------*/
+
+.box-header{
+    display: grid;
+    grid-template: "blancoHeader1 logo blancoHeader2 nav login menu-hambur"   60px 
+                    "mainImg      mainImg mainImg    mainImg mainImg mainImg"  600px/
+                    200px         120px 120px 1fr 250px  80px;
+}
+.logo{
+    grid-area: logo ;
+    background-color: rgb(194, 169, 120);
+}
+.nav{
+    grid-area: nav;
+    background-color: rgba(14, 62, 192, 0.329);
+}
+.login{
+    grid-area: login;
+    background-color: rgb(64, 64, 64);
+}
+.menu-hambur{
+    grid-area: menu-hambur;
+    background-color: aquamarine;
+}
+.texto-grid{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.blancoHeader1{
+    grid-area: blancoHeader1;
+    background-color: rgb(22, 42, 99);
+}
+.blancoHeader2{
+    grid-area: blancoHeader2;
+    background-color: rgb(22, 42, 99);
+}
+.mainImg{
+    grid-area: mainImg;
+    background-color: dodgerblue;
+}
+
+/* ---------- BODY ----------- */
+
+.box-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+.imgBody {
+    margin: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(194, 169, 120);
+}
+.textBody {
+    margin: 100px;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(64, 64, 64);
+}
+.box-body2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+  }
+.box-body3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* ------------ SEMIFOOT ---------*/
+.boxFoot{
+    display: grid;
+    justify-content: center;
+    background-color: rgb(246, 246, 246);
+}
+.titleFoot{
+    margin: 100px;
+    width: 700px;
+    height: 100px;
+    background-color: grey;
+}
+.textFoot{ 
+    margin: 0 100px ;
+    width: 700px;
+    height: 200px;
+    background-color: rgb(126, 92, 48);
+}
+.imgFoot{
+    margin: 50px;
+    width: 800px;
+    height: 500px;
+    background-color: rgb(185, 140, 72);
+}
+.textFoot2{ 
+    margin: 0 350px ;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(126, 92, 48);
+}

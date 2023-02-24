@@ -53,8 +53,8 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  
+}
+
 .imgBody {
     margin: 100px;
     width: 500px;
@@ -72,7 +72,7 @@
     flex-direction: row;
     justify-content: center;
     background-color: rgb(246, 246, 246);
-  }
+}
 .box-body3 {
     display: flex;
     flex-direction: row;
@@ -107,4 +107,62 @@
     width: 200px;
     height: 50px;
     background-color: rgb(126, 92, 48);
+}
+/* -------- FOOTER ------------*/
+
+.footer{
+    margin-top: 60px;
+    height:570px;
+    background-color: rgb(64, 64, 64); 
+    display: grid; 
+    grid-gap: 40px;
+    grid-template: "redes produc company recursos poli" 
+                    / 250px; 
+}
+.redes{
+    margin: 80px 0 0 70px;
+    grid-area: redes;
+    height: 60%;
+    background-color: aqua; 
+}
+.produc{
+    margin: 80px 0 0 70px;
+    grid-area: produc;
+    height: 60%;
+    background-color: blue;
+}
+.company {
+    margin: 80px 0 0 70px;
+    grid-area: company;
+    height: 60%;
+    background-color: orange;
+}
+.recursos {
+    margin: 80px 0 0 70px;
+    grid-area: recursos;
+    height: 60%;
+    background-color: purple;
+}
+.poli {
+    margin: 80px 80px 0 70px;
+    grid-area: poli;
+    height: 60%;
+    background-color: yellow;
+}
+hr{
+    width: 1000px;
+    height: .1px;
+    margin-left: 180px;
+    background-color: dodgerblue;
+}
+.disc {
+    margin: 80px 0 0 70px;
+    height: 80px;
+    background-color: brown; 
+}
+
+.registrar {
+    margin: 80px 80px 70px 50px;
+    height: 80px;
+    background-color: brown;
 }

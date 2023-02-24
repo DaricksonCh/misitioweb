@@ -150,19 +150,23 @@
     background-color: yellow;
 }
 hr{
-    width: 1000px;
+    width: 1550px;
     height: .1px;
     margin-left: 180px;
     background-color: dodgerblue;
 }
 .disc {
-    margin: 80px 0 0 70px;
-    height: 80px;
+    margin: 19% 0 0 10%;
+    position: absolute;
+    height: 60px;
+    border-radius: 20%;
     background-color: brown; 
 }
 
 .registrar {
-    margin: 80px 80px 70px 50px;
-    height: 80px;
+    position: absolute;
+    border-radius: 20%;
+    margin: 19% 0 0 87%;
+    height: 60px;
     background-color: brown;
 }

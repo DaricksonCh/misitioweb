@@ -6,9 +6,10 @@
 
 .box-header{
     display: grid;
+    width: 100%;
     grid-template: "blancoHeader1 logo blancoHeader2 nav login menu-hambur"   60px 
-                    "mainImg      mainImg mainImg    mainImg mainImg mainImg"  600px/
-                    200px         120px 120px 1fr 250px  80px;
+                    "mainImg      mainImg mainImg    mainImg mainImg mainImg"  500px/
+                    100px         120px   100px 1fr  100px   80px;
 }
 .logo{
     grid-area: logo ;
@@ -117,56 +118,175 @@
     display: grid; 
     grid-gap: 40px;
     grid-template: "redes produc company recursos poli" 
-                    / 250px; 
+                    /100px 100px 100px   100px    100px; 
 }
-.redes{
+/* .redes{
     margin: 80px 0 0 70px;
     grid-area: redes;
     height: 60%;
-    background-color: aqua; 
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    float: right;
 }
 .produc{
     margin: 80px 0 0 70px;
     grid-area: produc;
     height: 60%;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .company {
     margin: 80px 0 0 70px;
     grid-area: company;
     height: 60%;
     background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .recursos {
     margin: 80px 0 0 70px;
     grid-area: recursos;
     height: 60%;
     background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .poli {
     margin: 80px 80px 0 70px;
     grid-area: poli;
     height: 60%;
-    background-color: yellow;
-}
-hr{
-    width: 1550px;
-    height: .1px;
-    margin-left: 180px;
-    background-color: dodgerblue;
+    background-color: rgb(148, 148, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .disc {
-    margin: 19% 0 0 10%;
-    position: absolute;
     height: 60px;
     border-radius: 20%;
+    width: 100%;
     background-color: brown; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .registrar {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20%;
-    margin: 19% 0 0 87%;
     height: 60px;
+    width: 100%;
     background-color: brown;
+} */
+@media screen and (max-width: 800px) {
+    /* Cambios en el header */
+    .box-header{
+        grid-template: 
+            "logo login menu hambur " 80px
+            "main-hambur" 100%
+            "blacoHeader2" 20%
+            /1fr;
+    }
+    .nav {
+        display: none;
+    }
+    .menu-hambur {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .texto-grid {
+        font-size: 1em;
+    }
+
+    /* Cambios en el body */
+    .box-body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgBody, .textBody {
+        margin: 50px;
+        width: 90%;
+        height: 300px;
+    }
+
+    /* Cambios en el footer */
+    .footer {
+        margin-top: 60px;
+        height: 100px;
+        width: 100%;
+        /* grid-template:
+            "redes" auto
+            "produc" auto
+            "company" auto
+            "recursos" auto
+            "poli" auto
+            / 1fr;
+    } */
+/* 
+    .disc, .registrar {
+        margin: 0;
+        position: relative;
+
+    */
+    } 
+}
+
+@media screen and (max-width: 600px) {
+    /* Cambios en el header */
+    .box-header {
+        grid-template: 
+            "blancoHeader1 logo" 60px
+            "nav menu-hambur" auto
+            "login" auto
+            "mainImg" auto
+            / 1fr 80px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-hambur {
+        justify-content: flex-end;
+    }
+
+    .texto-grid {
+        font-size: 0.7em;
+    }
+
+    /* Cambios en el body */
+    .imgBody, .textBody {
+        margin: 30px;
+        width: 90%;
+        height: 250px;
+    }
+
+    /* Cambios en el footer */
+    .footer {
+        margin-top: 30px;
+        width: 100%;
+        /* grid-template:
+            "redes produc" auto
+            "company recursos" auto
+            "poli poli" auto
+            / 1fr 1fr;
+    }
+
+    .disc, .registrar {
+        margin: 0;
+        position: relative;
+        height: 50px;
+        border-radius: 10%;
+        */
+    } 
 }

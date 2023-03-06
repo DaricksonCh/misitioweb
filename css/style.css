@@ -1,5 +1,320 @@
-
-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+*{
+    padding: 0;
+    margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #0d0d0d;
+    animation: background-color 8s ease infinite alternate;
+}
+@keyframes background-color {
+    0% {
+    background-color: #0d0d0d;
+    }
+    50% {
+    background-color: #444343;
+    }
+    100% {
+    background-color: #1d1d1d;
+    }
+}
+
+/* --------- NAV -------- */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(32, 33, 36,.9);
+}
+.nav{
+    display: grid;
+    grid-gap: 20px;
+    grid-template:"empty-left   logo   empty-middle   empty-middle  empty-middle  menu   empty-right" 100px/ 
+                    2fr          20%       1fr          1fr            1fr         30%     1fr;
+}
+
+.logo{
+    margin-top: 35px;
+    grid-area: logo;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+
+.menu{
+    grid-area: menu;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.menu ul a{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 20px;
+}
+.name {
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 6em;
+}
+.menu ul li a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: all 0.3s ease-out;
+}
+.menu ul li a:hover:before {
+    transform: scaleX(1);
+}
+.name h1 {
+    font-size: 7rem;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #F20544, #F05F1D, #F2B138, #0B9FD9, #1CCCD3, #21E6C1, #21C36F, #A0E934) no-repeat;
+    background-size: 1000%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: colorchange 20s ease-in-out infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        background-position: 0% center;
+    }
+    50% {
+        background-position: 100% center;
+    }
+    100% {
+        background-position: 0% center;
+    }
+}
+.h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.7em;
+    width: 280px;
+    margin: 20px auto;
+    align-items: center;
+    color: aliceblue;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 220px;
+    width: 100px;
+    height: 100px;
+    font-size: 3em;
+    background-color: #e6dfdf;
+    border-radius: 50%;
+}
+
+.social:hover{
+    font-size: 4.5em;
+    transition: 1s;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+}
+.about-me{
+    height: 900px;
+    width: 100%;
+    scroll-margin-top: 15ex;
+}
+.hh3{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2.3em;
+    color: aliceblue;
+}
+.hh4{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: aliceblue;
+}
+.projects{
+    margin-top: 20px;
+    scroll-margin-top: 15ex;
+}
+
+.fonts{
+    display: grid;
+    margin-top: 20px;
+    grid-gap: 30px;
+    grid-template:  "empty-left   font1      font2    font3       empty-right" 250px
+                    "empty-left   empty      font4    empty-lol   empty-right" 250px/
+                    1fr           27%         27%      27%         1fr;
+} 
+.font1{ 
+    grid-area: font1;
+    justify-content: center;
+    display: flex;
+}
+.font2{
+    grid-area: font2;
+    justify-content: center;
+    display: flex;
+}
+.font3{
+    grid-area: font3;
+    justify-content: center;
+    display: flex;
+}
+.font4{
+    grid-area: font4;
+    justify-content: center;
+    display: flex;
+}
+.img{
+    display: grid;
+    margin-top: 20px;
+    grid-gap: 30px;
+    grid-template:  "empty-left   img1      img2     img3       empty-right" 250px
+                    "empty-left   empty     img4    empty-lol   empty-right" 250px/
+                    1fr           27%       27%      27%         1fr;
+} 
+.img1{ 
+    grid-area: img1;
+    justify-content: center;
+    display: flex;
+}
+.img2{
+    grid-area: img2;
+    justify-content: center;
+    display: flex;
+}
+.img3{
+    grid-area: img3;
+    justify-content: center;
+    display: flex;
+}
+.img4{
+    grid-area: img4;
+    justify-content: center;
+    display: flex;
+}
+.menus{
+    display: grid;
+    margin-top: 20px;
+    grid-gap: 30px;
+    grid-template:  "empty-left   menu1     menu2     menu3       empty-right" 250px
+                    "empty-left   menu4     menu5   empty-lol   empty-right" 250px/
+                    1fr           27%       27%      27%         1fr;
+} 
+.menu1{ 
+    grid-area: menu1;
+    justify-content: center;
+    display: flex;
+}
+.menu2{
+    grid-area: menu2;
+    justify-content: center;
+    display: flex;
+}
+.menu3{
+    grid-area: menu3;
+    justify-content: center;
+    display: flex;
+}
+.menu4{
+    grid-area: menu4;
+    justify-content: center;
+    display: flex;
+}
+.menu5{
+    grid-area: menu5;
+    justify-content: center;
+    display: flex;
+}
+.tablas{
+    display: grid;
+    margin-top: 20px;
+    grid-gap: 30px;
+    grid-template:  "empty-left   tabla1    tabla2     tabla3       empty-right" 250px
+                    "empty-left   empty     tabla4  empty-lol   empty-right" 250px/
+                    1fr           27%       27%      27%         1fr;
+} 
+.tabla1{ 
+    grid-area: tabla1;
+    justify-content: center;
+    display: flex;
+}
+.tabla2{
+    grid-area: tabla2;
+    justify-content: center;
+    display: flex;
+}
+.tabla3{
+    grid-area: tabla3;
+    justify-content: center;
+    display: flex;
+}
+.tabla4{
+    grid-area: tabla4;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid{
+    display: grid;
+    margin-top: 20px;
+    grid-gap: 30px;
+    grid-template:  "empty-left   flexgrid1    flexgrid2     flexgrid3       empty-right" 250px
+                    "empty-left   flexgrid4     flexgrid5    flexgrid6   empty-right" 250px/
+                    1fr           27%             27%        27%         1fr;
+} 
+.flexgrid1{ 
+    grid-area: flexgrid1;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid2{
+    grid-area: flexgrid2;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid3{
+    grid-area: flexgrid3;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid4{
+    grid-area: flexgrid4;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid5{
+    grid-area: flexgrid5;
+    justify-content: center;
+    display: flex;
+}
+.flexgrid6{
+    grid-area: flexgrid6;
+    justify-content: center;
+    display: flex;
+}
+img{
+    width:250px;
+    height:250px;
+
+}
+
+
+
 

@@ -166,21 +166,25 @@ body {
     grid-area: font1;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .font2{
     grid-area: font2;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .font3{
     grid-area: font3;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .font4{
     grid-area: font4;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .img{
     display: grid;
@@ -194,21 +198,25 @@ body {
     grid-area: img1;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .img2{
     grid-area: img2;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .img3{
     grid-area: img3;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .img4{
     grid-area: img4;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .menus{
     display: grid;
@@ -222,26 +230,31 @@ body {
     grid-area: menu1;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .menu2{
     grid-area: menu2;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .menu3{
     grid-area: menu3;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .menu4{
     grid-area: menu4;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .menu5{
     grid-area: menu5;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .tablas{
     display: grid;
@@ -255,21 +268,25 @@ body {
     grid-area: tabla1;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .tabla2{
     grid-area: tabla2;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .tabla3{
     grid-area: tabla3;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .tabla4{
     grid-area: tabla4;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid{
     display: grid;
@@ -283,36 +300,41 @@ body {
     grid-area: flexgrid1;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid2{
     grid-area: flexgrid2;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid3{
     grid-area: flexgrid3;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid4{
     grid-area: flexgrid4;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid5{
     grid-area: flexgrid5;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 .flexgrid6{
     grid-area: flexgrid6;
     justify-content: center;
     display: flex;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
 img{
     width:250px;
     height:250px;
-
 }
 
 

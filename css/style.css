@@ -33,10 +33,27 @@ body {
 .nav{
     display: grid;
     grid-gap: 20px;
-    grid-template:"empty-left   logo   empty-middle   empty-middle  empty-middle  menu   empty-right" 100px/ 
-                    2fr          20%       1fr          1fr            1fr         30%     1fr;
+    grid-template:"empty-left logo   empty-middle   empty-middle  empty-middle  menu   empty-right" 100px/ 
+                    1fr              20%       1fr          2fr            1fr         30%     1fr;
 }
-
+/*          */
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(48, 48, 48,.9);
+    height: 80px;
+}
+.bar-menu{
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    position: fixed;
+    visibility: hidden;
+    top: 15px;
+    left: 30px;
+}
+/*          */
 .logo{
     margin-top: 35px;
     grid-area: logo;
@@ -63,12 +80,7 @@ body {
     display: inline-block;
     margin: 20px;
 }
-.name {
-    text-align: center;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    margin-top: 6em;
-}
+
 .menu ul li a:before {
     content: '';
     position: absolute;
@@ -82,6 +94,13 @@ body {
 }
 .menu ul li a:hover:before {
     transform: scaleX(1);
+}
+/* ------- NAME  --------*/
+.name {
+    text-align: center;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    margin-top: 6em;
 }
 .name h1 {
     font-size: 7rem;
@@ -332,11 +351,199 @@ body {
     display: flex;
     border: 2px solid rgba(175, 171, 171, 0.5);
 }
+.border {
+    border-radius: 5%;
+    border: 1px solid #000;
+    animation: border-colors 3s infinite;
+}
+
+.border {
+    border-radius: 5%;
+    border: 1px solid #000;
+    animation: border-colors 3s infinite;
+}
+
+@keyframes border-colors {
+    0% {
+        border-color: #ccc;
+    }
+    25% {
+        border-color: #999;
+    }
+    50% {
+        border-color: #666;
+    }
+    75% {
+        border-color: #333;
+    }
+    100% {
+        border-color: #ccc;
+    }
+}
 img{
     width:250px;
     height:250px;
 }
+.pop{
+    color: rgb(31, 167, 13);
+}
+.menu ul li:hover a {
+    color: rgb(243, 17, 17);
+}
+.logo >h2:hover{
+    padding: 1px;
+    cursor: pointer;
+}
+.blox{
+    display: none;
+}
+.auto-type {
+    border-bottom: 2px solid rgb(25, 189, 46);
+}
 
+/* Para pantallas de 1050px*/
+
+@media only screen and (max-width: 1050px){
+    .nav{
+        grid-template:"empty-left   logo     empty-middle  empty-middle  empty-middle   menu   empty-right" 100px/ 
+                        1fr         20%       1fr            1fr           1fr         30%     1fr;
+    }
+    .menu ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin: 20px 10px;
+    }
+    .fonts{
+        grid-template:  "empty-left   font1   empty   font2     empty-right" 250px
+                        "empty-left   font3   empty   font4     empty-right" 250px/
+                        1fr           40%      1fr      40%       1fr;
+    } 
+    .img{
+        grid-template:  "empty-left   img1   empty   img2     empty-right" 250px
+                        "empty-left   img3   empty   img4     empty-right" 250px/
+                        1fr           40%     1fr    40%       1fr;
+    } 
+    .menus{
+        grid-template:  "empty-left   menu1   empty   menu2     empty-right" 250px
+                        "empty-left   menu3   empty   menu4     empty-right" 250px
+                        "empty-left   menu5   empty   empty-s   empty-right"/
+                        1fr           40%     1fr    40%       1fr;
+    } 
+    .tablas{
+        grid-template:  "empty-left   tabla1   empty   tabla2     empty-right" 250px
+                        "empty-left   tabla3   empty   tabla4     empty-right" 250px/
+                        1fr           40%     1fr    40%       1fr;
+    } 
+    .flexgrid{
+        grid-template:  "empty-left   flexgrid1   empty   flexgrid2     empty-right" 250px
+                        "empty-left   flexgrid3   empty   flexgrid4     empty-right" 250px
+                        "empty-left   flexgrid5   empty   flexgrid6     empty-right"/
+                        1fr           40%          1fr    40%       1fr;
+    }
+}
+/* Para pantallas de 450px*/
+@media only screen and (max-width: 450px){
+    .nav{
+        grid-template:"empty-left   logo  empty-middle    hamburger-menu  " 100px/ 
+                        1fr        60%     1fr            20% ;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        margin-bottom: 10%;
+    }
+    .menu{
+        display: none;
+    }
+    .name h1{
+        font-size: 4em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social{
+        display: none;
+    }
+    .fonts{
+        grid-template:  "empty-left   font1    empty-right" 250px
+                        "empty-left   font2    empty-right" 250px
+                        "empty-left   font3    empty-right" 250px
+                        "empty-left   font4    empty-right" 250px/
+                        1fr           80%        1fr;
+    } 
+    .img{
+        grid-template:  "empty-left   img1    empty-right" 250px
+                        "empty-left   img2    empty-right" 250px
+                        "empty-left   img3    empty-right" 250px
+                        "empty-left   img4    empty-right" 250px/
+                        1fr           80%        1fr;
+    } 
+    .menus{
+        grid-template:  "empty-left   menu1    empty-right" 250px
+                        "empty-left   menu2    empty-right" 250px
+                        "empty-left   menu3    empty-right" 250px
+                        "empty-left   menu4    empty-right" 250px
+                        "empty-left   menu5    empty-right" 250px/
+                        1fr           80%     1fr;
+    } 
+    .tablas{
+        grid-template:  "empty-left   tabla1    empty-right" 250px
+                        "empty-left   tabla2    empty-right" 250px
+                        "empty-left   tabla3    empty-right" 250px
+                        "empty-left   tabla4    empty-right" 250px/
+                        1fr           80%        1fr;
+    } 
+    .flexgrid{
+        grid-template:  "empty-left   flexgrid1       empty-right" 250px
+                        "empty-left   flexgrid2       empty-right" 250px
+                        "empty-left   flexgrid3       empty-right" 250px
+                        "empty-left   flexgrid4       empty-right" 250px
+                        "empty-left   flexgrid5       empty-right" 250px
+                        "empty-left   flexgrid6       empty-right" 250px/
+                        1fr           80%              1fr;
+    }
+    .main-menu{
+        background-color: rgb(96, 96, 96,.9);
+        margin-top: 81px;
+        padding: 0;
+        text-align: center;
+    }
+    .main-nav{
+        height: 80px;;
+    }
+    .main-menu{
+        display: none; 
+    }
+    .main-menu-visible{
+        display: block;
+        background-color: rgb(48, 48, 48,.9);
+        margin-top: 81px;
+        padding: 0;
+        margin-bottom: 1px;
+    }
+    .bar-menu{
+        visibility: visible;
+        left: 92%;
+    }
+    .bar-menu:hover{
+        cursor: pointer;
+    }
+    .item-main-menu{
+        display: block;
+        color: black;
+        text-align: center;
+        position: relative;
+    }
+    .item-main-menu:hover{
+        border-bottom: 1px solid white;
+    }
+}
 
 
 

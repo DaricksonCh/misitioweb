@@ -86,48 +86,70 @@ imgMini4.addEventListener("click", function(){
 
 let btnRestar = document.getElementById("btnRestar");
 let btnSumar = document.getElementById("btnSumar");
-let btnCantidad = document.getElementById("btnCantidad")
+let btnCantidad = document.getElementById("btnCantidad");
 let cantBox = document.getElementById("cantBox");   
+// valor total y unitario
+let valorUnitario = 199000;
+let valorUnitarioTxt = valorUnitario.toString();
+/* p.o.o */
+let valorUnitarioPeso = new Intl.NumberFormat().format(valorUnitario);
+let valorTotal = document.getElementById("valorTotal");
+let valorTotalInt = 0;
+
+
 
 
 btnRestar.addEventListener("click", function() {
     let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
     let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt = numeroElementosInt - 1 ;
-    let totalElementosTxt = totalElementosInt.toString();
-    numeroElementos.innerHTML = totalElementosTxt;
-
+    if(numeroElementosInt > 0){
+        let totalElementosInt = numeroElementosInt - 1 ;
+        let totalElementosTxt = totalElementosInt.toString();
+        numeroElementos.innerHTML = totalElementosTxt;
+        valorTotalInt = valorUnitario * totalElementosInt;
+        valorTotal.innerHTML = "$" + new Intl.NumberFormat().format(valorTotalInt);
+    }
 });
 
 btnSumar.addEventListener("click",function(){
-    /* LEEMOS EL NUMERO DE LA INTERFAZ */
     let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
-    /* CONVERTIMOS EL TEXTO LEIOD EN ENTERO */
     let numeroElementosInt = parseInt(numeroElementosTxt);
-    /* AÑADIMOS 1 AL TOTAL VALOR */
-    let totalElementosInt = numeroElementosInt + 1;
-    /* CONVERTIMOS EL RESULTADO DE LA OPERACION A TEXTO */
-    let totalElementosTxt = totalElementosInt.toString();
-    /* AGREGAMOS EL NUEVO VALOR */
-    numeroElementos.innerHTML = totalElementosTxt;
-})
-let click  = 0;
-btnSumar.addEventListener("click", function(){
-    click = click +1;
-    btnCantidad.innerHTML = click;
-    if(click > 10){
-        btnCantidad.innerHTML = 10;
-        click = click = 10;
+    if(numeroElementosInt < 10){
+        let totalElementosInt = numeroElementosInt + 1;
+        let totalElementosTxt = totalElementosInt.toString();
+        numeroElementos.innerHTML = totalElementosTxt;
+        valorTotalInt = valorUnitario * totalElementosInt;
+        valorTotal.innerHTML = "$" + new Intl.NumberFormat().format(valorTotalInt);
     }
-})
-btnRestar.addEventListener("click",function(){
-    click = click -1;
-    btnCantidad.innerHTML = click;
-    if(click < 0) {
-        btnCantidad.innerHTML = 0;
-        click = click = 0;
-    }
-})
 
+})
+// let click  = 0;
+// btnSumar.addEventListener("click", function(){
+//     click = click +1;
+//     btnCantidad.innerHTML = click;
+//     if(click > 10){
+//         btnCantidad.innerHTML = 10;
+//         click = click = 10;
+//     }
+// })
+// btnRestar.addEventListener("click",function(){
+//     click = click -1;
+//     btnCantidad.innerHTML = click;
+//     if(click < 0) {
+//         btnCantidad.innerHTML = 0;
+//         click = click = 0;
+//     }
+// })
+
+
+/* light-box */
+let lightBox = document.getElementById("lightBox");
+let btnX = document.getElementById("btnX");
+imgBox.addEventListener("click", function(){
+    lightBox.classList.remove("light-hidden");
+});
+btnX.addEventListener("click", function(){
+    lightBox.classList.add("light-hidden")
+})  
 
 

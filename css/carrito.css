@@ -94,8 +94,9 @@
 .container-body{
     display: grid;
     margin-bottom: 10vh;
-    grid-template:"empty-left box-main empty-middle contenido empty-right"auto/
+    grid-template:"empty-left box-main empty-middle contenido empty-right"  auto/
                     1fr        40%      .3fr         40%       1fr ;
+                    /* grid-template-columns: repeat(auto-fit, minmax(1fr)); */
 }
 .contenido{
     grid-area: contenido;
@@ -181,6 +182,7 @@ img{
                     "empty-0    empty-0   empty-0    empty-0   empty-0    empty-0   empty-0"30px
                     "box-mini1  empty1    box-mini2  empty2    box-mini3  empty3    box-mini4"90px/
                     90px        25px      90px       25px      90px       25px      90px;
+                    
 }
 .img-box{
     grid-area: img-box; 
@@ -267,5 +269,61 @@ img{
         font-size: 70%;
     }
 }
+/* lightbox */
+.lightbox{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(64, 64, 64,.8);
+    width: 100%;
+    height: 100vh;
+}
+.light-hidden{
+    display: none;
+}
 
-
+.main-lightbox{
+    width: 450px; 
+    height: 600px;
+}
+.btn-style{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(24, 24, 24);
+    position: relative;
+    top: 220px;
+    font-size: 1.4em;
+}
+.btn-adelante{
+    left: 95%;
+    z-index: 999;
+    top: 195px;
+    cursor: pointer;
+}
+.btn-atras{
+    margin: -23px;
+    z-index: 999;
+    cursor: pointer;
+}
+.btn-x{
+    top: -10px;
+    left: 94%;
+    z-index: 999;
+    color: #FF7D1A;
+    position: relative;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.img-main-light{
+    position: relative;
+    top: -45px;
+    width: 100%;
+    border-radius: 20px;
+    z-index: 20;
+}

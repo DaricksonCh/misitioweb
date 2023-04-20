@@ -9,6 +9,14 @@
     <title>Carrito</title>
 </head>
 <body>
+    <div class="lightbox light-hidden" id="lightBox">
+        <div class="main-lightbox">
+            <div id="btnX" class="btn-x"><i class="style-btn fa-solid fa-x"></i></div>
+                <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+                <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div> 
+                <img class="img-main-light" src="img/sneakers/producto1.png" alt="">
+        </div>
+    </div>
     <div class="container">
         <div class="nav-container">
             <div class="logo">
@@ -58,9 +66,10 @@
                 <div class="text">
                     <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
                 </div>
+                <div id="Totales" class="totales"></div>
                 <div class="precio">
-                    $125.00
-                    <span class="descuento">50%</span>
+                    <div class="valor-total" id="valorTotal">$199.000</div>
+                    <span class="descuento">50%</span> 
                 </div>
                 <div class="precio-old">
                     $250.00

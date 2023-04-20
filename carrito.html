@@ -4,20 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8d35a45d51.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/carrito.css">
-    <title>Document</title>
+    <title>Carrito</title>
 </head>
 <body>
-    <div  id="mainBox">
-        <ul>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-            <li>home</li>
-        </ul>
-        <div id="imgPrincipal" class="img-principal"></div>
+    <div class="container">
+        <div class="nav-container">
+            <div class="logo">
+                <img  src="img/sneakers/logo.svg" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="carrito-avatar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <img src="img/sneakers/image-avatar.png" alt="">
+            </div>
+            <div class="bottom"></div>
+        </div>
+
+        <div class="container-body">
+            <div id="mainBox" class="box-main">
+                <div class="img-box-main">
+                    <!-- <div id="boxMini"  class="box-mini"> -->
+                        <img id="imgBox" class="img-box" src="img/sneakers/producto1.png" alt="image-product-1">
+                    <!-- </div> -->
+                    <div id="boxImgMini1"  class="box-mini1">
+                        <img id="imgMini1" class="img-mini" src="img/sneakers/image-product-1-mini.png" alt="image-product-2">
+                    </div>
+                    <div id="boxImgMini2"  class="box-mini2">
+                        <img  id="imgMini2" class="img-mini" src="img/sneakers/image-product-2-mini.png" alt="image-product-3">
+                    </div>
+                    <div id="boxImgMini3"  class="box-mini3">
+                        <img id="imgMini3" class="img-mini" src="img/sneakers/image-product-3-mini.png" alt="image-product-3">
+                    </div>
+                    <div id="boxImgMini4"  class="box-mini4">
+                        <img id="imgMini4" class="img-mini" src="img/sneakers/image-product-4-mini.png" alt="image-product-4">
+                    </div>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="titles">
+                    <h3>SNEAKER COMPANY</h3>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                </div>
+                <div class="text">
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                </div>
+                <div class="precio">
+                    $125.00
+                    <span class="descuento">50%</span>
+                </div>
+                <div class="precio-old">
+                    $250.00
+                </div>
+                <div class="botones-car">
+                    <div class="buy-box">
+                        <div id="cantBox" class="cant-box">
+                            <div id="btnRestar" class="icon-op btn-restar">
+                                <i class="fa-solid fa-minus"></i>
+                            </div>
+                            <div id="btnCantidad" class="icon-op cant-obj">
+                                <span id="numeroElementos">1</span> 
+                            </div>
+                            <div id="btnSumar" class="icon-op btn-sumar">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i> Add to cart
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        
     </div>
+
 </body>
 <script src="js/carrito.js"></script>
 </html>

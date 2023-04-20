@@ -93,12 +93,10 @@ let cantBox = document.getElementById("cantBox");
 btnRestar.addEventListener("click", function() {
     let numeroElementosTxt = document.getElementById("numeroElementos").innerHTML;
     let numeroElementosInt = parseInt(numeroElementosTxt);
-    let totalElementosInt = numeroElementosInt - 1;
+    let totalElementosInt = numeroElementosInt - 1 ;
     let totalElementosTxt = totalElementosInt.toString();
     numeroElementos.innerHTML = totalElementosTxt;
-    if (totalElementosInt === 0) { 
-        numeroElementos.innerHTML = "0"; 
-    }
+
 });
 
 btnSumar.addEventListener("click",function(){
@@ -112,8 +110,22 @@ btnSumar.addEventListener("click",function(){
     let totalElementosTxt = totalElementosInt.toString();
     /* AGREGAMOS EL NUEVO VALOR */
     numeroElementos.innerHTML = totalElementosTxt;
-    if (totalElementosTxt == 10){
-        numeroElementos.innerHTML = "10";
+})
+let click  = 0;
+btnSumar.addEventListener("click", function(){
+    click = click +1;
+    btnCantidad.innerHTML = click;
+    if(click > 10){
+        btnCantidad.innerHTML = 10;
+        click = click = 10;
+    }
+})
+btnRestar.addEventListener("click",function(){
+    click = click -1;
+    btnCantidad.innerHTML = click;
+    if(click < 0) {
+        btnCantidad.innerHTML = 0;
+        click = click = 0;
     }
 })
 

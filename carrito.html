@@ -11,10 +11,25 @@
 <body>
     <div class="lightbox light-hidden" id="lightBox">
         <div class="main-lightbox">
-            <div id="btnX" class="btn-x"><i class="style-btn fa-solid fa-x"></i></div>
-                <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
-                <div class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div> 
-                <img class="img-main-light" src="img/sneakers/producto1.png" alt="">
+                <div id="btnX" class="btn-x"><i class="style-btn fa-solid fa-x"></i></div>
+                <div id="btnBack" class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+                <div id="btnFront" class="btn-style btn-adelante"><i class="style-btn fa-solid fa-chevron-right"></i></div> 
+                <img id="imgBox11" class="img-main-light" src="img/sneakers/producto1.png" alt="">
+                
+                <div class="enlinea">
+                    <div id="boxImgMini11"  class="box-img-mini box-mini1">
+                        <img id="imgMini11" class="img-mini" src="img/sneakers/image-product-1-mini.png" alt="image-product-2">
+                    </div>
+                    <div id="boxImgMini22"  class="box-img-mini box-mini2">
+                        <img  id="imgMini22" class="img-mini" src="img/sneakers/image-product-2-mini.png" alt="image-product-3">
+                    </div>
+                    <div id="boxImgMini33"  class="box-img-mini box-mini3">
+                        <img id="imgMini33" class="img-mini" src="img/sneakers/image-product-3-mini.png" alt="image-product-3">
+                    </div>
+                    <div id="boxImgMini44"  class="box-img-mini box-mini4">
+                        <img id="imgMini44" class="img-mini" src="img/sneakers/image-product-4-mini.png" alt="image-product-4">
+                    </div>
+                </div>
         </div>
     </div>
     <div class="container">
@@ -32,7 +47,9 @@
                 </ul>
             </div>
             <div class="carrito-avatar">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="number">
+                    <i class="fa-solid fa-cart-shopping"></i><span id="numeroPlus" class="numero-carro numero-hidden">1</span>
+                </div>
                 <img src="img/sneakers/image-avatar.png" alt="">
             </div>
             <div class="bottom"></div>
@@ -58,6 +75,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="contenido">
                 <div class="titles">
                     <h3>SNEAKER COMPANY</h3>
@@ -88,11 +106,10 @@
                             </div>
                         </div>
                     </div>
-                    <button class="add-to-cart">
+                    <button class="add-to-cart" id="addCart">
                         <i class="fas fa-shopping-cart"></i> Add to cart
                     </button>
                 </div>
-
             </div>
         </div>
         

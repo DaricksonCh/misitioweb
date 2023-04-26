@@ -280,9 +280,10 @@ body {
     margin-top: 20px;
     grid-gap: 30px;
     grid-template:  "empty-left   tabla1    tabla2     tabla3       empty-right" 250px
-                    "empty-left   empty     tabla4  empty-lol   empty-right" 250px/
+                    "empty-left   tabla5     tabla4  empty-lol   empty-right" 250px/
                     1fr           27%       27%      27%         1fr;
 } 
+
 .tabla1{ 
     grid-area: tabla1;
     justify-content: center;
@@ -306,6 +307,11 @@ body {
     justify-content: center;
     display: flex;
     border: 2px solid rgba(175, 171, 171, 0.5);
+}
+.tabla5{
+    grid-area: tabla5;
+    justify-content: center;
+    display: flex;
 }
 .flexgrid{
     display: grid;

@@ -151,5 +151,120 @@ imgBox.addEventListener("click", function(){
 btnX.addEventListener("click", function(){
     lightBox.classList.add("light-hidden")
 })  
+let imgMini11 = document.getElementById("imgMini11");
+let imgMini22 = document.getElementById("imgMini22");
+let imgMini33 = document.getElementById("imgMini33");
+let imgMini44 = document.getElementById("imgMini44");
+let imgBox11 = document.getElementById("imgBox11");
+let btnBack = document.getElementById("btnBack");
+let btnFront = document.getElementById("btnFront");
+
+imgMini11.addEventListener("click", function(){
+        imgBox11.setAttribute("src","img/sneakers/producto1.png")
+        boxImgMini11.classList.add("box-img-mini")
+        boxImgMini22.classList.remove("box-img-mini")
+        boxImgMini33.classList.remove("box-img-mini")
+        boxImgMini44.classList.remove("box-img-mini")
+});
+imgMini22.addEventListener("click", function(){
+    imgBox11.setAttribute("src","img/sneakers/image-product-2.png")
+    boxImgMini11.classList.remove("box-img-mini")
+    boxImgMini22.classList.add("box-img-mini")
+    boxImgMini33.classList.remove("box-img-mini")
+    boxImgMini44.classList.remove("box-img-mini")
+});
+imgMini33.addEventListener("click", function(){
+    imgBox11.setAttribute("src","img/sneakers/image-product-3.png")
+    boxImgMini11.classList.remove("box-img-mini")
+    boxImgMini22.classList.remove("box-img-mini")
+    boxImgMini33.classList.add("box-img-mini")
+    boxImgMini44.classList.remove("box-img-mini")
+});
+imgMini44.addEventListener("click", function(){
+    imgBox11.setAttribute("src","img/sneakers/image-product-4.png")
+    boxImgMini11.classList.remove("box-img-mini")
+    boxImgMini22.classList.remove("box-img-mini")
+    boxImgMini33.classList.remove("box-img-mini")
+    boxImgMini44.classList.add("box-img-mini")
+});
+
+let imgList = ["img/sneakers/producto1.png", "img/sneakers/image-product-2.png", "img/sneakers/image-product-3.png", "img/sneakers/image-product-4.png"];
+let contador = 0;
+
+imgBox11.setAttribute("src", imgList[contador]);
+
+btnBack.addEventListener("click", function(){
+    if (contador > 0){
+        contador--;
+    }else{
+        contador = imgList.length -1;
+    }
+    imgBox11.setAttribute("src",imgList[contador]);
+
+    boxImgMini11.classList.add("box-img-mini");
+    boxImgMini22.classList.add("box-img-mini");
+    boxImgMini33.classList.add("box-img-mini");
+    boxImgMini44.classList.add("box-img-mini");
+
+    if(contador == 0) {
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else if(contador == 1){
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else if(contador == 2){
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else{
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+    }
+    
+});
+btnFront.addEventListener("click",function(){
+    if(contador <  imgList.length - 1){
+        contador++;
+    }else{
+        contador = 0;
+    } 
+    imgBox11.setAttribute("src",imgList[contador]);
+
+    boxImgMini11.classList.add("box-img-mini");
+    boxImgMini22.classList.add("box-img-mini");
+    boxImgMini33.classList.add("box-img-mini");
+    boxImgMini44.classList.add("box-img-mini");
+
+    if(contador == 0) {
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else if(contador == 1){
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else if(contador == 2){
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini44.classList.remove("box-img-mini");
+    }else{
+        boxImgMini11.classList.remove("box-img-mini");
+        boxImgMini22.classList.remove("box-img-mini");
+        boxImgMini33.classList.remove("box-img-mini");
+    }
+});
 
 
+/*-------------- carrito --------------*/
+
+let addCart = document.getElementById("addCart");
+let numeroPlus = document.getElementById("numeroPlus");
+addCart.addEventListener("click", function(){
+
+        numeroPlus.classList.remove("numero-hidden");
+
+
+});

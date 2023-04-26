@@ -61,8 +61,22 @@
     width: 100%;
     transform: translateY(0); 
 }
-
-
+.number > i {
+    font-size: 1.8em;
+}
+.numero-carro{
+    position: relative;
+    bottom: 22px;
+    right: 9px;
+    border-radius: 50%; 
+    color: #FFEDE0;
+    background-color: #FF7D1A;
+    font-size: .9em; 
+    padding: 0.3em; 
+}
+.numero-hidden{
+    display: none;
+}
 /* ------ CARRITO ------- */
 .carrito-avatar{
     grid-area: carrito-avatar;
@@ -210,8 +224,8 @@ img{
     grid-area: box-mini4;
 }
 .box-img-mini{
-    border: 2px solid rgb(255, 125, 26);
-    border-radius: 15px;
+    border: 5px solid rgb(255, 125, 26);
+    border-radius: 16px;
 }
 .img-mini-act{
     opacity: .4;
@@ -275,7 +289,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(64, 64, 64,.8);
+    background-color: rgb(64, 64, 64,.6);
     width: 100%;
     height: 100vh;
 }
@@ -315,9 +329,9 @@ img{
     top: -10px;
     left: 94%;
     z-index: 999;
-    color: #FF7D1A;
+    color: #ffffff;
     position: relative;
-    font-size: 1.4em;
+    font-size: 1.9em;
     cursor: pointer;
 }
 .img-main-light{
@@ -326,4 +340,13 @@ img{
     width: 100%;
     border-radius: 20px;
     z-index: 20;
+}
+.enlinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.enlinea div{
+    width: 5.5em;
 }

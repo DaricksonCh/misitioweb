@@ -49,9 +49,10 @@
     content: '';
     position: absolute;
     bottom: 0;
+    top: 50px;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 5px;
     background-color: #FF7D1A;
     transition: width 0.3s ease-in-out, transform 0.3s ease-in-out; 
     transform: translateY(-100%); 
@@ -341,12 +342,17 @@ img{
     border-radius: 20px;
     z-index: 20;
 }
-.enlinea{
-    display: flex;
+
+
+
+.light-enlinea{
+    display: grid;
+    grid-area: img-box-main;
+    width: 100%;
+    grid-template:"box-mini1  empty1    box-mini2  empty2    box-mini3  empty3    box-mini4"auto/
+                    90px        auto     90px     auto      90px       auto     90px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;             
 }
-.enlinea div{
-    width: 5.5em;
-}
+

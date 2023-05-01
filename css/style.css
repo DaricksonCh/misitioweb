@@ -434,43 +434,40 @@ img{
     gap: 1em;
     flex-wrap: wrap;
     margin: 0 50px;
-  }
-  
-  .gallery > div {
+}
+
+.gallery > div {
     flex: 1;
     border-radius: 1em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
     transition: flex .4s ease-in-out;
-  }
-  
-  .gallery > div:hover {
-    flex: 5;
-  }
-  
+}
 
-  
-  @media (min-width: 576px) {
-    /* Estilos para teléfonos móviles en modo paisaje */
-    .gallery {
-      flex-direction: row;
-      height: 10em;
-    }
-    
-    .gallery > div {
-      flex: 1;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    /* Estilos para tablet */
-    .gallery {
-      height: 15em;
-      margin: 0 50px;
-    }
-  }
-  
+.gallery > div:hover {
+    flex: 5;
+}
+
+
+@media (min-width: 576px) {
+.gallery {
+    flex-direction: row;
+    height: 10em;
+}
+
+.gallery > div {
+    flex: 1;
+}
+}
+
+@media (min-width: 768px) {
+.gallery {
+    height: 15em;
+    margin: 0 50px;
+}
+}
+
 
 /* Para pantallas de 1050px*/
 

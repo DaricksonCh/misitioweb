@@ -25,13 +25,16 @@
     width: 100%;
     left: 0;
 }
-.img-valorant-after{
-    grid-area: img-valorant1;
+.img-valorant-left{
     position: relative;
     left: -100%;
     transition: left 1s;
 }
-
+.img-valorant-right{
+    position: relative;
+    right: -100%;
+    transition: right 1s;
+}
 .main-nav{
     grid-area: main-nav;
     height: 60px;
@@ -94,3 +97,8 @@
 .img-valorant3{
     display: none;
 }
+.img-valorant-hidden{
+    display: none;
+}
+
+

@@ -24,7 +24,9 @@
     grid-area: img-valorant1;
     width: 100%;
     left: 0;
+    right: 0;
 }
+/*--------------- ANIMATION -------------*/
 .img-valorant-left{
     position: relative;
     left: -100%;
@@ -97,8 +99,7 @@
 .img-valorant3{
     display: none;
 }
-.img-valorant-hidden{
-    display: none;
-}
-
+/* .imgs{
+    display: flex;
+} */
 

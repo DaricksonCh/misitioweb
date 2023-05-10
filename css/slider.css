@@ -23,8 +23,8 @@
     position: relative;
     grid-area: img-valorant1;
     width: 100%;
-    left: 0;
-    right: 0;
+    /* left: 0;
+    right: 0; */
 }
 /*--------------- ANIMATION -------------*/
 .img-valorant-left{
@@ -93,13 +93,31 @@
 }
 /* IMG SLIDER */
 
-.img-valorant2{
+/* .img-valorant2{
     display: none;
 }
 .img-valorant3{
     display: none;
-}
+} */
 /* .imgs{
     display: flex;
 } */
+
+.container-slider{
+    overflow: hidden;
+}
+.slider{
+    display: flex;
+    width: 300%;
+    margin-left: -100%;
+}
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-section{
+    width: 100%;
+}
 

@@ -172,201 +172,37 @@ body {
 .projects{
     margin-top: 20px;
     scroll-margin-top: 15ex;
+    display: grid;
+    grid-template: "empty-left fonts empty0 img empty1 menus empty-rigt"
+                    "empty-left tablas empty0 slider empty1 flexgrid empty-rigt"/
+                    1fr          30%    1fr 30% 1fr 30% 1fr;
 }
 
 .fonts{
-    display: grid;
-    margin-top: 20px;
-    grid-gap: 30px;
-    grid-template:  "empty-left   font1      font2    font3       empty-right" 250px
-                    "empty-left   empty      font4    empty-lol   empty-right" 250px/
-                    1fr           27%         27%      27%         1fr;
-} 
-.font1{ 
-    grid-area: font1;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.font2{
-    grid-area: font2;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.font3{
-    grid-area: font3;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.font4{
-    grid-area: font4;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.img{
-    display: grid;
-    margin-top: 20px;
-    grid-gap: 30px;
-    grid-template:  "empty-left   img1      img2     img3       empty-right" 250px
-                    "empty-left   empty     img4    empty-lol   empty-right" 250px/
-                    1fr           27%       27%      27%         1fr;
-} 
-.img1{ 
-    grid-area: img1;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.img2{
-    grid-area: img2;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.img3{
-    grid-area: img3;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.img4{
-    grid-area: img4;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.menus{
-    display: grid;
-    margin-top: 20px;
-    grid-gap: 30px;
-    grid-template:  "empty-left   menu1     menu2     menu3       empty-right" 250px
-                    "empty-left   menu4     menu5   empty-lol   empty-right" 250px/
-                    1fr           27%       27%      27%         1fr;
-} 
-.menu1{ 
-    grid-area: menu1;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.menu2{
-    grid-area: menu2;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.menu3{
-    grid-area: menu3;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.menu4{
-    grid-area: menu4;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.menu5{
-    grid-area: menu5;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.tablas{
-    display: grid;
-    margin-top: 20px;
-    grid-gap: 30px;
-    grid-template:  "empty-left   tabla1    tabla2     tabla3       empty-right" 250px
-                    "empty-left   tabla5     tabla4  tabla6   empty-right" 250px/
-                    1fr           27%       27%      27%         1fr;
+    grid-area: fonts;
 } 
 
-.tabla1{ 
-    grid-area: tabla1;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.tabla2{
-    grid-area: tabla2;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.tabla3{
-    grid-area: tabla3;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.tabla4{
-    grid-area: tabla4;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.tabla5{
-    grid-area: tabla5;
-    justify-content: center;
-    display: flex;
-}
-.tabla6{
-    grid-area: tabla6;
-    justify-content: center;
-    display: flex;
-}
+.img{
+    grid-area: img;
+} 
+
+.menus{
+    grid-area: menus;
+} 
+
+.tablas{
+    grid-area: tablas;
+} 
 
 .flexgrid{
-    display: grid;
-    margin-top: 20px;
-    grid-gap: 30px;
-    grid-template:  "empty-left   flexgrid1    flexgrid2     flexgrid3       empty-right" 250px
-                    "empty-left   flexgrid4     flexgrid5    flexgrid6   empty-right" 250px/
-                    1fr           27%             27%        27%         1fr;
+    grid-area: flexgrid;
 } 
-.flexgrid1{ 
-    grid-area: flexgrid1;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.flexgrid2{
-    grid-area: flexgrid2;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.flexgrid3{
-    grid-area: flexgrid3;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.flexgrid4{
-    grid-area: flexgrid4;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.flexgrid5{
-    grid-area: flexgrid5;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
-.flexgrid6{
-    grid-area: flexgrid6;
-    justify-content: center;
-    display: flex;
-    border: 2px solid rgba(175, 171, 171, 0.5);
-}
 
+.slider{
+    grid-area: slider;
+}
 img{
-    width:250px;
+    width:300px;
     height:250px;
 }
 .pop{
@@ -379,9 +215,7 @@ img{
     padding: 1px;
     cursor: pointer;
 }
-.blox{
-    display: none;
-}
+
 .auto-type {
     border-bottom: 2px solid rgb(25, 189, 46);
 }
@@ -405,30 +239,8 @@ img{
     padding: 24px;
     border-radius: 8px;
     scroll-snap-align: start;
+    border: 2px solid rgba(175, 171, 171, 0.5);
 }
-
-/*------------- image scroll ---------------*/
-.gallery {
-    display: flex;
-    height: 15em;
-    gap: 1em;
-    flex-wrap: wrap;
-    margin: 0 50px;
-}
-
-.gallery > div {
-    flex: 1;
-    border-radius: 1em;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    transition: flex .4s ease-in-out;
-}
-
-.gallery > div:hover {
-    flex: 5;
-}
-
 
 @media (min-width: 576px) {
 .gallery {

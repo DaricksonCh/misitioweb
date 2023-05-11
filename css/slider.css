@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    overflow: auto;
+    box-sizing: border-box;
 }
 
 .main-content{
@@ -9,7 +9,7 @@
     grid-template:"empty-left      main-nav      empty-right"
                     "empty-left    img-valorant1    empty-right"
                     "empty-left    iconos        empty-right"/ 
-                    1fr             1500px       1fr;
+                    1fr            75%       1fr;
 }
 .empty-left{
     grid-area: empty-left;
@@ -19,89 +19,67 @@
     grid-area: empty-right;
     background: linear-gradient(rgb(255, 255, 255)10% ,rgb(197, 197, 197));
 }
-.img-valorant1{
-    position: relative;
-    grid-area: img-valorant1;
-    width: 100%;
-    /* left: 0;
-    right: 0; */
-}
-/*--------------- ANIMATION -------------*/
-.img-valorant-left{
-    position: relative;
-    left: -100%;
-    transition: left 1s;
-}
-.img-valorant-right{
-    position: relative;
-    right: -100%;
-    transition: right 1s;
-}
+
 .main-nav{
     grid-area: main-nav;
-    height: 60px;
+    height: 7vh;
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 35%;
+    gap: 25vw;
+}
+.main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
 }
 .main-logo > img{
-    float: left;
-    height: 29px;
-    padding: 12px;
-    margin-left: 20px;
+    width: 12vw;
+    padding: 10px;
 }
 .main-ul{
     list-style: none;
-    color: rgb(215, 215, 215);
-    font-size: 1.3em; 
+    font-size: 1.1em; 
 }
-
 .style-li{
-    padding: 12px 40px;
+    padding: 2vh 2vw;
     display: inline-block;
 }
-.item-menu{
+.style-li > a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: rgb(24, 24, 24);
     font-weight: 900;
 }
+
+.arrow-left, .arrow-right{
+    background-color: aliceblue;
+    border-radius: 40%;
+    width: 3vw;
+    height: 6vh;
+    cursor: pointer;
+    position: relative;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.arrow-left{
+    display: grid;
+    bottom: 51vh;
+    left: .6vw;
+    place-content: center;
+}
+.arrow-right{
+    left: 70.7vw;
+    bottom: 58vh;
+    display: grid;
+    place-content: center;
+}
 .iconos{
     grid-area: iconos;
     height:100vh;
 }
-.arrow-left, .arrow-right{
-    position: relative;
-    background-color: aliceblue;
-    border-radius: 40%;
-    width:70px;
-    height: 70px;
-    cursor: pointer;
-    font-size: 40px;
-}
-.arrow-left{
-    display: grid;
-    bottom: 51%;
-    left: .6%;
-    place-content: center;
-}
-.arrow-right{
-    left: 94.7%;
-    bottom: 58%;
-    display: grid;
-    place-content: center;
-}
-/* IMG SLIDER */
-
-/* .img-valorant2{
-    display: none;
-}
-.img-valorant3{
-    display: none;
-} */
-/* .imgs{
-    display: flex;
-} */
 
 .container-slider{
     overflow: hidden;

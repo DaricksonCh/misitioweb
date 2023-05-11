@@ -1,4 +1,70 @@
-*{
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template:
+      "empty-left      main-nav      empty-right"
+      "empty-left    img-valorant1    empty-right"
+      "empty-left    iconos        empty-right" / 
+      1fr  75vw 1fr;
+  }
+  
+  .empty-left{
+    grid-area: empty-left;
+    background: linear-gradient(rgb(255, 255, 255)10% ,rgb(192, 192, 192) );
+}
+.empty-right{
+    grid-area: empty-right;
+    background: linear-gradient(rgb(255, 255, 255)10% ,rgb(197, 197, 197));
+}
+
+  
+  .main-nav {
+    grid-area: main-nav;
+    height: 7vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 25vw;
+  }
+  
+  .main-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+    width: 12vw;
+  }
+  
+  .main-logo > img {
+    width: 100%;
+    padding: 1vw;
+  }
+  
+  .main-ul {
+    list-style: none;
+    font-size: 1.1vw; 
+  }
+  
+  .style-li {
+    padding: 2vh 2vw;
+    display: inline-block;
+  }
+  
+  .style-li > a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    font-weight: 900;
+  }
+  
+
+
+
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,14 +76,6 @@
                     "empty-left    img-valorant1    empty-right"
                     "empty-left    iconos        empty-right"/ 
                     1fr            75%       1fr;
-}
-.empty-left{
-    grid-area: empty-left;
-    background: linear-gradient(rgb(255, 255, 255)10% ,rgb(192, 192, 192) );
-}
-.empty-right{
-    grid-area: empty-right;
-    background: linear-gradient(rgb(255, 255, 255)10% ,rgb(197, 197, 197));
 }
 
 .main-nav{
@@ -50,31 +108,34 @@
     text-decoration: none;
     color: rgb(24, 24, 24);
     font-weight: 900;
+} */
+
+.arrow-left,
+.arrow-right {
+  background-color: aliceblue;
+  border-radius: 40%;
+  width: 3vw;
+  height: 6vh;
+  cursor: pointer;
+  position: relative;
+  font-size: 3vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.arrow-left, .arrow-right{
-    background-color: aliceblue;
-    border-radius: 40%;
-    width: 3vw;
-    height: 6vh;
-    cursor: pointer;
-    position: relative;
-    font-size: 3em;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.arrow-left {
+  display: grid;
+  bottom: 49vh;
+  left: 1vw;
+  place-content: center;
 }
-.arrow-left{
-    display: grid;
-    bottom: 51vh;
-    left: .6vw;
-    place-content: center;
-}
-.arrow-right{
-    left: 70.7vw;
-    bottom: 58vh;
-    display: grid;
-    place-content: center;
+
+.arrow-right {
+  left: 71vw;
+  bottom: 55vh;
+  display: grid;
+  place-content: center;
 }
 .iconos{
     grid-area: iconos;

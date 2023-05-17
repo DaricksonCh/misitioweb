@@ -27,14 +27,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 999;
     background-color: rgb(32, 33, 36,.9);
 }
 .nav{
     display: grid;
-    grid-gap: 20px;
-    grid-template:"empty-left logo   empty-middle   empty-middle  empty-middle  menu   empty-right" 100px/ 
+    grid-template:"empty-left logo   empty-middle   empty-middle  empty-middle  menu   empty-right" 5.2vw/ 
                     1fr              20%       1fr          2fr            1fr         30%     1fr;
 }
 /*          */
@@ -42,69 +41,71 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: rgb(48, 48, 48,.9);
-    height: 80px;
 }
 .bar-menu{
     color: rgb(255, 255, 255);
-    font-size: 2.2em;
+    font-size: 2.2vw;
     position: fixed;
     visibility: hidden;
-    top: 15px;
-    left: 30px;
+    top: 1.5vh;
+    left: 3vh;
 }
 /*          */
-.logo{
-    margin-top: 35px;
+.logo {
+    margin-top: 3.5vh; 
     grid-area: logo;
-    font-size: 1.3em;
+    font-size: 1.3vw; 
     color: aliceblue;
 }
 
-.menu{
+.menu {
     grid-area: menu;
-    margin-top: 20px;
+    margin-top: 2vh; 
     text-align: center;
 }
 
-.menu ul a{
+.menu ul a {
     color: aliceblue;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.3vw; 
     font-weight: 500;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
+
 .menu ul li {
     display: inline-block;
-    margin: 20px;
+    margin: 2vh;
 }
+
 
 .menu ul li a:before {
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px;
-    bottom: -3px;
+    height: 0.2vh; 
+    bottom: -0.3vh; 
     left: 0;
     background-color: #fff;
     transform: scaleX(0);
     transition: all 0.3s ease-out;
 }
+
 .menu ul li a:hover:before {
     transform: scaleX(1);
 }
-/* ------- NAME  --------*/
+
 .name {
     text-align: center;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
-    margin-top: 6em;
+    margin-left: 0.8vw; 
+    margin-right: 0.8vw; 
+    margin-top: 10vh; 
 }
+
 .name h1 {
-    font-size: 7rem;
+    font-size: 7vw; 
     color: transparent;
     -webkit-text-fill-color: transparent;
     background: linear-gradient(to right, #F20544, #F05F1D, #F2B138, #0B9FD9, #1CCCD3, #21E6C1, #21C36F, #A0E934) no-repeat;
@@ -113,6 +114,7 @@ body {
     background-clip: text;
     animation: colorchange 20s ease-in-out infinite;
 }
+
 
 @keyframes colorchange {
     0% {
@@ -126,57 +128,63 @@ body {
     }
 }
 .h3 {
-    margin-top: 20px;
+    margin-top: 2vh; 
     text-align: center;
-    font-size: 1.7em;
-    width: 280px;
-    margin: 20px auto;
+    font-size: 1.7vw; 
+    width: 28vw; 
+    margin: 2vh auto; 
     align-items: center;
     color: aliceblue;
 }
-.social{
+
+.social {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 220px;
-    width: 100px;
-    height: 100px;
-    font-size: 3em;
+    margin: 0 22vw; 
+    width: 4.7vw; 
+    height: 4.7vw; 
+    font-size: 3vw; 
     background-color: #e6dfdf;
     border-radius: 50%;
 }
 
-.social:hover{
-    font-size: 4.5em;
+.social:hover {
+    font-size: 4.5vw;
     transition: 1s;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
-.about-me{
-    height: 900px;
+
+.about-me {
+    height: 90vh;
     width: 100%;
     scroll-margin-top: 15ex;
 }
-.hh3{
-    margin-top: 60px;
+
+.hh3 {
+    margin-top: 6vh; 
     text-align: center;
-    font-size: 2.3em;
+    font-size: 2.3vw; 
     color: aliceblue;
 }
-.hh4{
-    margin-top: 40px;
+
+.hh4 {
+    margin-top: 4vh; 
     text-align: center;
-    font-size: 2em;
-    margin-bottom: 40px;
+    font-size: 2vw; 
+    margin-bottom: 4vh; 
     color: aliceblue;
 }
-.projects{
-    margin-top: 20px;
+
+.projects {
+    margin-top: 2vh; 
     scroll-margin-top: 15ex;
     display: grid;
-    grid-template: "empty-left fonts empty0 img empty1 menus empty-rigt"
-                    "empty-left tablas empty0 slider empty1 flexgrid empty-rigt"/
-                    1fr          30%    1fr 30% 1fr 30% 1fr;
+    grid-template: "empty-left fonts empty0 img empty1 menus empty-right"
+                    "empty-left tablas empty0 slider empty1 flexgrid empty-right" /
+                    1fr 30vw 1fr 30vw 1fr 30vw 1fr; 
 }
+
 
 .fonts{
     grid-area: fonts;
@@ -201,17 +209,20 @@ body {
 .slider{
     grid-area: slider;
 }
-img{
-    width:300px;
-    height:250px;
+img {
+    width: 16vw; 
+    height: 12.5vw; 
 }
-.pop{
+
+.pop {
     color: rgb(31, 167, 13);
 }
+
 .menu ul li:hover a {
     color: rgb(243, 17, 17);
 }
-.logo >h2:hover{
+
+.logo > h2:hover {
     padding: 1px;
     cursor: pointer;
 }
@@ -221,90 +232,50 @@ img{
 }
 
 
+
 /*------------ scroll -------------*/
-.container-box{
+.container-box {
     display: flex;
     overflow-x: scroll;
-    padding: 24px;
-    width: 400px;
-    height: 360px;
+    padding: 3vw; 
+    width: 20vw; 
+    height: 22vw; 
     scroll-snap-type: x mandatory;
-    scroll-padding: 24px;
+    scroll-padding: 2vw; 
     border-radius: 8px;
-    gap: 12px;
-    margin: 2em auto;
+    gap: .5vw; 
+    margin: 1vh auto; 
 }
-.item-box{
-    flex: 0 0 100%;
-    padding: 24px;
+
+.item-box {
+    flex: 0 0 100%; 
+    padding: 1vw;
     border-radius: 8px;
     scroll-snap-align: start;
-    border: 2px solid rgba(175, 171, 171, 0.5);
+    border: 0.2vw solid rgba(175, 171, 171, 0.5); 
 }
 
-@media (min-width: 576px) {
-.gallery {
-    flex-direction: row;
-    height: 10em;
-}
-
-.gallery > div {
-    flex: 1;
-}
-}
-
-@media (min-width: 768px) {
-.gallery {
-    height: 15em;
-    margin: 0 50px;
-}
-}
 
 
 /* Para pantallas de 1050px*/
 
-@media only screen and (max-width: 1050px){
-    .nav{
-        grid-template:"empty-left   logo     empty-middle  empty-middle  empty-middle   menu   empty-right" 100px/ 
-                        1fr         20%       1fr            1fr           1fr         30%     1fr;
+@media only screen and (max-width: 1150px) {
+    .nav {
+        grid-template: "empty-left   logo     empty-middle  empty-middle  empty-middle   menu   empty-right" 10vh /
+            1fr 14vw 1fr 1fr 1fr 30vw 1fr; 
     }
-    .menu ul{
+    
+    .menu ul {
         display: flex;
         flex-direction: row;
     }
 
     .menu ul li {
         display: inline-block;
-        margin: 20px 10px;
-    }
-    .fonts{
-        grid-template:  "empty-left   font1   empty   font2     empty-right" 250px
-                        "empty-left   font3   empty   font4     empty-right" 250px/
-                        1fr           40%      1fr      40%       1fr;
-    } 
-    .img{
-        grid-template:  "empty-left   img1   empty   img2     empty-right" 250px
-                        "empty-left   img3   empty   img4     empty-right" 250px/
-                        1fr           40%     1fr    40%       1fr;
-    } 
-    .menus{
-        grid-template:  "empty-left   menu1   empty   menu2     empty-right" 250px
-                        "empty-left   menu3   empty   menu4     empty-right" 250px
-                        "empty-left   menu5   empty   empty-s   empty-right"/
-                        1fr           40%     1fr    40%       1fr;
-    } 
-    .tablas{
-        grid-template:  "empty-left   tabla1   empty   tabla2     empty-right" 250px
-                        "empty-left   tabla3   empty   tabla4     empty-right" 250px/
-                        1fr           40%     1fr    40%       1fr;
-    } 
-    .flexgrid{
-        grid-template:  "empty-left   flexgrid1   empty   flexgrid2     empty-right" 250px
-                        "empty-left   flexgrid3   empty   flexgrid4     empty-right" 250px
-                        "empty-left   flexgrid5   empty   flexgrid6     empty-right"/
-                        1fr           40%          1fr    40%       1fr;
+        margin: 2vh 1vw;
     }
 }
+
 /* Para pantallas de 450px*/
 @media only screen and (max-width: 450px){
     .nav{
@@ -330,44 +301,7 @@ img{
     .social{
         display: none;
     }
-    .fonts{
-        grid-template:  "empty-left   font1    empty-right" 250px
-                        "empty-left   font2    empty-right" 250px
-                        "empty-left   font3    empty-right" 250px
-                        "empty-left   font4    empty-right" 250px/
-                        1fr           80%        1fr;
-    } 
-    .img{
-        grid-template:  "empty-left   img1    empty-right" 250px
-                        "empty-left   img2    empty-right" 250px
-                        "empty-left   img3    empty-right" 250px
-                        "empty-left   img4    empty-right" 250px/
-                        1fr           80%        1fr;
-    } 
-    .menus{
-        grid-template:  "empty-left   menu1    empty-right" 250px
-                        "empty-left   menu2    empty-right" 250px
-                        "empty-left   menu3    empty-right" 250px
-                        "empty-left   menu4    empty-right" 250px
-                        "empty-left   menu5    empty-right" 250px/
-                        1fr           80%     1fr;
-    } 
-    .tablas{
-        grid-template:  "empty-left   tabla1    empty-right" 250px
-                        "empty-left   tabla2    empty-right" 250px
-                        "empty-left   tabla3    empty-right" 250px
-                        "empty-left   tabla4    empty-right" 250px/
-                        1fr           80%        1fr;
-    } 
-    .flexgrid{
-        grid-template:  "empty-left   flexgrid1       empty-right" 250px
-                        "empty-left   flexgrid2       empty-right" 250px
-                        "empty-left   flexgrid3       empty-right" 250px
-                        "empty-left   flexgrid4       empty-right" 250px
-                        "empty-left   flexgrid5       empty-right" 250px
-                        "empty-left   flexgrid6       empty-right" 250px/
-                        1fr           80%              1fr;
-    }
+   
     .main-menu{
         background-color: rgb(96, 96, 96,.9);
         margin-top: 81px;

@@ -3,12 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadena.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Cadena</h1>
-
-
+    <div class="container">
+        <div class="container-form">
+            <form action="">
+                <table>
+                    <thead>
+                        <td colspan="3">Formulario</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingrese la fecha de subida del archivo</td>
+                            <td><input type="date" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la hora</td>
+                            <td><input type="time" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Suba el archivo</td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <td class="submit"><input type="submit" onclick="validacion()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
     <script src="ej-js/cadena.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,12 +28,62 @@
                             <td><input type="file"></td>
                         </tr>
                         <tr>
-                            <td class="submit"><input type="submit" onclick="validacion()"></td>
+                            <td class="submit"><input type="submit"></td>
                         </tr>
                     </tbody>
                 </table>
             </form>
         </div>
+    </div>
+    <script src="ej-js/cadena.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadena.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form id="formulario">
+                <table>
+                    <thead>
+                        <td colspan="3">Formulario</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ingrese el día de subida del archivo</td>
+                            <td><input type="number" id="dia" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese el mes</td>
+                            <td><input type="number" id="mes" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese el año</td>
+                            <td><input type="number" id="anio" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese la hora</td>
+                            <td><input type="number" id="hora" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td>Ingrese los minutos</td>
+                            <td><input type="number" id="minutos" class="inputs"></td>
+                        </tr>
+                        <tr>
+                            <td class="submit" colspan="2"><input type="submit" value="Calcular"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div id="resultado" class="resultado"></div>
     </div>
     <script src="ej-js/cadena.js"></script>
 </body>

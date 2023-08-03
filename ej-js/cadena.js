@@ -50,6 +50,6 @@ function calcularTiempoRestante() {
     diferencia -= horasRestantes * (1000 * 60 * 60);
     let minutosRestantes = Math.floor(diferencia / (1000 * 60));
 
-    resultadoElement.innerHTML = "Tiempo restante: " + diasRestantes + " días, " + horasRestantes + " horas y " + minutosRestantes + " minutos.";
+    resultadoElement.innerHTML = "Tiempo faltante: " + diasRestantes + " días, " + horasRestantes + " horas y " + minutosRestantes + " minutos. Favor subirlo entre las fechas establecidas";
     }
 }

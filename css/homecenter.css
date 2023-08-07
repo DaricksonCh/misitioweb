@@ -5,14 +5,15 @@
 }
 
 .barra {
-    width: 100%;
+    width: 100vw;
     display: grid;
-    grid-template:"empty-1    logo    buscador    ubicacion   carrito   cmr   cuenta empty"70px/
-                   1fr          210px    680px       160px          80px   140px       106px    1fr ;
+    grid-template:
+        "empty-1    logo    buscador    ubicacion   carrito   cmr   cuenta empty" 10vh /
+        1fr          12vw      30vw      10vw       6vw    5vw      5vw    1fr ;
     justify-content: center;
-    
+    align-items: center;
+    gap: 20px;
 }
-
 .box {
     display: flex;
     width: 100%;
@@ -111,4 +112,134 @@ input[type="text"]:focus {
 .shop{
     margin-left: 10px;
     margin-right: 10px;
+}
+.horizontal-menu{
+    width: 100%;
+    height: 4.0625rem;
+    background: #fff;
+    border-top: 0.0625rem solid #f5f5f5;
+    border-bottom: 0.0625rem solid #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container-menu-hori {
+    padding: 0;
+    width: 100%;
+}
+.ul-menu-hori{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.ul-menu-hori li {
+    width: 7vw; 
+    display: flex;
+}
+.ul-menu-hori li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: .625rem;
+    padding: 0 0.625rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+.container-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: none;
+    }
+    .container-mobile {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hamburger,
+    .lupa {
+        font-size: 1.5em;
+        color: rgb(0, 0, 0);
+        padding: 5px;
+    }
+    .hamburger{
+        font-size: 1.8em;
+        margin: 0 10px 0 2px;
+    }
+    .lupa i{
+        position: relative;
+        right: -100px;
+    }
+    .logo-mobile img {
+        width: 40px;
+        height: auto;
+    }
+
+    .box {
+        font-size: 1.2em;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .shop {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        right: -95px;
+    }
+
+    .compra {
+        background-color: rgb(221, 0, 33);
+        color: rgb(255, 255, 255);
+    }
+
+    .cart {
+        margin-left: 5px;
+    }
+    .user {
+        position: relative;
+        right: -35px;
+        font-size: 1.5em;
+    }
+}
+
+/*js */
+
+.search{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+
+}
+.search .lupa-hidden{
+    margin: 5px;
+    font-size: 1.4em;
+}
+.search .x-hidden{
+    margin: 7px;
+    font-size: 1.4em;
 }

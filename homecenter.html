@@ -3,23 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homecenter (Copia)</title>
+    <title>Homecenter</title>
     <script src="https://kit.fontawesome.com/8d35a45d51.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/homecenter.css">
 </head>
 <body>
-    <div class="barra">
-        <div class="box "></div>
-        <div class="box logo"><img class="logo-hc" src="img/homecenter/logo.webp" ></div>
-        <div class="box seeker">
-            <div class="busca"><input type="text" placeholder="¿Qué estás buscando?"></div>
-            <div class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div class="container">
+        <div class="barra">
+            <div class="box "></div>
+            <div class="box logo"><img class="logo-hc" src="img/homecenter/logo.webp" ></div>
+            <div class="box seeker">
+                <div class="busca"><input type="text" placeholder="¿Qué estás buscando?"></div>
+                <div class="lupa"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="box ubicacion"><p class="location"><i class="fa-solid fa-location-dot"></i></p>&nbsp;<p class="para">Estás comprando para<br><span class="city">Bogota DC</span></p></div>
+            <div class="box shop" ><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
+            <div class="box cmr"><img src="img/homecenter/logo-cmr-puntos.svg" width="28">&nbsp;<p class="para2">Programa<br><span class="puntos">CMR Puntos</span></p></div>
+            <div class="box"><i class="fa-regular fa-user"></i>&nbsp;Mi cuenta</div>
         </div>
-        <div class="box ubicacion"><p class="location"><i class="fa-solid fa-location-dot"></i></p>&nbsp;<p class="para">Estás comprando para<br><span class="city">Bogota DC</span></p></div>
-        <div class="box shop" ><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
-        <div class="box cmr"><img src="img/homecenter/logo-cmr-puntos.svg" width="28">&nbsp;<p class="para2">Programa<br><span class="puntos">CMR Puntos</span></p></div>
-        <div class="box"><i class="fa-regular fa-user"></i>&nbsp;Mi cuenta</div>
+        <div class="horizontal-menu">
+            <div class="container-menu-hori">
+                <ul class="ul-menu-hori">
+                    <li><a href="#">CONSTRUCCIÓN Y<br> FERRETERÍA</a></li>
+                    <li><a href="#">PISOS, PINTURAS Y TERMINACIONES</a></li>
+                    <li><a href="#">HERRAMIENTAS<br> Y MAQUINARIAS</a></li>
+                    <li><a href="#">BAÑO,<br> COCINA Y ASEO</a></li>
+                    <li><a href="#">ELECTROHOGAR, TECNOLOGÍA Y<br> CLIMATIZACIÓN</a></li>
+                    <li><a href="#">MUEBLES Y<br> ORGANIZACIÓN</a></li>
+                    <li><a href="#">DECORACIÓN, MENAJE E ILUMINACIÓN</a></li>
+                    <li><a href="#">AIRE LIBRE, JARDÍN<br> Y MASCOTAS</a></li>
+                    <li><a href="#">AUTOMÓVILES Y<br> CARCENTER</a></li>
+                    <li><a href="#">SERVICIOS Y<br> PROYECTOS</a></li>
+                    <li><a href="#">PROYECTOS E<br> INSPIRACIÓN</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <div class="container-mobile" id="containerMobile">
+        <div class="mobile-menu">
+            <div class="first-mobile"></div>
+            <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo-mobile"><img src="img/homecenter/Logo_header_mobile.webp" alt=""></div>
+            <div class="lupa"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
+            <div class="box shop"><div class="compra">0</div><p class="cart"><i class="fa-solid fa-cart-shopping"></i></p></div>
+            <div class="box user"><i class="fa-regular fa-user"></i>&nbsp;</div>
+        </div>
+    </div>
+    <div class="search" id="search">
+        <div class="lupa-hidden"><i class="fa-solid fa-magnifying-glass" id="lupa"></i></div>
+        <input type="text" class="busca" placeholder="¿Que estas pensando?">
+        <div class="x-hidden" id="xHidden"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    
 </body>
 <script src="js/homecenter.js"></script>
 </html>

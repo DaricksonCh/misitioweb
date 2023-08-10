@@ -159,6 +159,83 @@ input[type="text"]:focus {
 .container-mobile{
     display: none;
 }
+.div-search{
+    display: none;
+}
+.container-chat-all{
+    position: fixed;
+    left: 75vw;
+    top: 42vh;
+    height: 48vh;
+    width: 22vw;
+    background-color: aqua;
+    border-radius: 10px;
+}
+.container-chat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 89vh;
+    left: 79vw;
+    width: 18vw;
+    height: 100px;
+    
+}
+.container-message{
+    width: 70%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.message{
+    font-size: .8rem;
+    background-color: rgb(255, 255, 255);
+    padding: 12px;
+    border: 1px solid rgb(225, 225, 225);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.container-ana{
+    cursor: pointer;
+    background-color: bisque;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background-color: rgb(10, 111, 213);
+    color: white;
+}
+.container-ana:hover{
+    opacity: .8;
+}
+.x-anna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.9vw;
+    padding: 10px;
+    color: #f5f5f5;
+    border-radius: 100px;
+    height: 4vh;
+    background-color:rgb(10, 111, 213);
+    position: fixed;
+    top: 91vh;
+    left: 93vw;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.x-anna:hover{
+    transition: 1s;
+    background-color: #f5f5f5;
+    color:rgb(10, 111, 213);
+}
+.container-x-anna{
+    display: none;
+}
 
 @media (max-width: 768px) {
     .container{
@@ -167,7 +244,6 @@ input[type="text"]:focus {
     .container-mobile {
         display: flex;
         align-items: center;
-        padding: 10px;
     }
     
     .mobile-menu {
@@ -223,6 +299,9 @@ input[type="text"]:focus {
         position: relative;
         right: -35px;
         font-size: 1.5em;
+    }
+    .div-search{
+        display: block;
     }
 }
 

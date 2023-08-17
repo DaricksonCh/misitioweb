@@ -3,7 +3,6 @@
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 .barra {
     width: 100vw;
     display: grid;
@@ -211,11 +210,132 @@ input[type="text"]:focus {
     height: 1.5px;
     background-color: #005DAD;
 }
-.container-chat{
+.form-ana{
+    position: fixed;
+    right: 20px;
+    height: calc(100vh - 70px);
+    top: 0;
+    width: 406px;
+    bottom:100px;
+    display: grid;
+    grid-template:"fm-header"70px
+                "frm-body"minmax(150px, 75vh)
+                "frm-input"70px
+                "frm-exit"100px/
+                406px ;
+}
+.form-header{
+    grid-area: fm-header;
+    background-color: #005DAD;
+}
+.img-ana{
+    width: 60px;
+    margin: 5px 0 0 5px;
+}
+.reloj-smg{
+    font-size: 0.7em;
+    position: relative;
+    bottom: 0;
+    left: 150px;
+}
+
+.text-opciones{
+    background-color: white;
+    width: 200px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+.title-form{
+    font-size: 1.3em;
+    margin: 0 0 0 5px;
+    color: #EAEEF3;
+}
+.form-body{
+    grid-area: frm-body;
+    background-color: #EAEEF3;
+    display: grid;
+    grid-template:"empty-left form-text empty-right"
+                    "empty-left slider  empty-right"/
+                    50px        1fr      40px ;
+}
+.slider{
+    grid-area: slider;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    border-radius: 10px;
+    height: auto;
+}
+.click{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 1px solid #e2e2e2;
+    color: #005DAD;
+    padding: 8px 0 0 0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.click:hover{
+    color: white;
+    background-color: rgb(172, 185, 255);
+    opacity: .9;
+}
+.imgAna2{
+    width: 100px;
+}
+.form-text{
+    grid-area: form-text;
+    margin: 10px 0 0 0;
+}
+.form-input{
+    grid-area: frm-input;
+    background-color: #EAEEF3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid #005DAD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-text{
+    background-color:#EAEEF3 ;
+    margin: 0 0 0 10px;
+    border: none;
+    background-color: transparent;
+}
+.icon-smile{
+    margin-right: 30px;
+    font-size: 1.8rem;
+}
+.input-text:focus{
+    outline: none;
+}
+
+.exit-style{
+    color: white;
+    background-color:#005DAD ;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 2em;
+    display: grid;
+    place-items: center;
+    margin-top: 15px;
+}
+.form-exit{
+    grid-area: frm-exit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* .container-chat{
     position: fixed;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 17.5px;
+    bottom: 0;
+    width: 99px;
+    height: 64px;
     top: 89vh;
     left: 79vw;
     width: 18vw;
@@ -271,11 +391,11 @@ input[type="text"]:focus {
     transition: 1s;
     background-color: #f5f5f5;
     color:rgb(10, 111, 213);
-}
+} */
 .container-x-anna{
     display: none;
 }
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     .container-chat-all {
         left: 10vw;
         top: 10vh;
@@ -286,7 +406,7 @@ input[type="text"]:focus {
         font-size: 0.7rem;
         padding: 10px;
     }
-}
+} */
 
 @media (max-width: 768px) {
     .container{

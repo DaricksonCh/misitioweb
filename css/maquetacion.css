@@ -207,7 +207,6 @@
         font-size: 1em;
     }
 
-    /* Cambios en el body */
     .box-body {
         flex-direction: column;
         align-items: center;

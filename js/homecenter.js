@@ -17,14 +17,19 @@ lupa.addEventListener("click", function() {
 containerXAnna = document.getElementById('containerXAnna');
 containerAna = document.getElementById('containerAna');
 containerChat = document.getElementById('containerChat');
+containerChatAll = document.getElementById('containerChatAll');
 
 
 containerAna.addEventListener("click",function(){
     containerChat.style.display = 'none';
     containerXAnna.style.display = 'flex';
+    containerChatAll.style.display = 'block';
     containerXAnna.addEventListener("click",function(){
         containerXAnna.style.display = 'none';
         containerChat.style.display = 'flex';
+        containerChatAll.style.display = 'none';
     })
 })
+
+
 

@@ -210,124 +210,189 @@ input[type="text"]:focus {
     height: 1.5px;
     background-color: #005DAD;
 }
-.form-ana{
+.form-ana {
     position: fixed;
     right: 20px;
-    height: calc(100vh - 70px);
+    height: 100vh;
     top: 0;
     width: 406px;
-    bottom:100px;
     display: grid;
-    grid-template:"fm-header"70px
-                "frm-body"minmax(150px, 75vh)
-                "frm-input"70px
-                "frm-exit"100px/
-                406px ;
+    grid-template: "frm-header" 70px
+                   "frm-body"  minmax(150px, 90vh)
+                   "frm-input" 60px
+                   "frm-exit" 80px/
+                    406px;     
 }
-.form-header{
-    grid-area: fm-header;
-    background-color: #005DAD;
+.form-header {
+    grid-area: frm-header;
+    background-color: rgb(0,93,173);
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
-.img-ana{
+.img-ana-I {
     width: 60px;
-    margin: 5px 0 0 5px;
+    margin-top: 7px;
+    margin-left: 7px;
 }
-.reloj-smg{
-    font-size: 0.7em;
+.title-form {
+    font-family: poppins;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-left: 30px;
+    color: white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.form-body {
+    grid-area: frm-body;
+    background-color: rgb(234,238,243);
+    display: grid;
+    grid-template: "empty-left form-text empty-right"
+                   "icon-arrow-left slider    empty-right" /
+                    50px        1fr       40px;
+}
+.img-ana-II {
+    width: 100px;
+}
+.form-text {
+    grid-area: form-text;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+.text-opciones {
+    background-color: white;
+    width: 250px;
+    border-radius: 5px;
+    padding: 10px;
+    letter-spacing: 0.08em;
+}
+.finger-style {
+    color: rgb(246, 191, 11);
+}
+.text-form-black {
+    font-weight: 900;
+    display: block;
+    margin-top: 30px;
+    letter-spacing: 0.08em;
+}
+.reloj-msj {
+    font-size: .7em;
     position: relative;
     bottom: 0;
-    left: 150px;
+    left: 200px;
 }
-
-.text-opciones{
-    background-color: white;
-    width: 200px;
-    border-radius: 5px;
-    line-height: 1.5;
+.box-main-slider{
+    width: 325px;
+    overflow: hidden;
 }
-.title-form{
-    font-size: 1.3em;
-    margin: 0 0 0 5px;
-    color: #EAEEF3;
-}
-.form-body{
-    grid-area: frm-body;
-    background-color: #EAEEF3;
-    display: grid;
-    grid-template:"empty-left form-text empty-right"
-                    "empty-left slider  empty-right"/
-                    50px        1fr      40px ;
-}
-.slider{
-    grid-area: slider;
+.icon-arrow-left{
+    grid-area: icon-arrow-left;
     background-color: rgb(255, 255, 255);
-    height: 100px;
-    border-radius: 10px;
-    height: auto;
-}
-.click{
+    width: 36px;
+    height: 36px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #e2e2e2;
+}
+.fa-angle-left{
     color: #005DAD;
-    padding: 8px 0 0 0;
-    font-size: 1.2em;
-    cursor: pointer;
+    font-size: 1.6em;
 }
-.click:hover{
-    color: white;
-    background-color: rgb(172, 185, 255);
-    opacity: .9;
-}
-.imgAna2{
-    width: 100px;
-}
-.form-text{
-    grid-area: form-text;
-    margin: 10px 0 0 0;
-}
-.form-input{
-    grid-area: frm-input;
-    background-color: #EAEEF3;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top: 2px solid #005DAD;
+.slider {
+    grid-area: slider;
+    font-size: .9em;
+    height: 120px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.input-text{
-    background-color:#EAEEF3 ;
-    margin: 0 0 0 10px;
-    border: none;
-    background-color: transparent;
-}
-.icon-smile{
-    margin-right: 30px;
-    font-size: 1.8rem;
-}
-.input-text:focus{
-    outline: none;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-flow: column wrap;
+    position: relative;
+    right: 150px;
 }
 
-.exit-style{
-    color: white;
-    background-color:#005DAD ;
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    font-size: 2em;
-    display: grid;
-    place-items: center;
-    margin-top: 15px;
+.box-slider {
+    background-color: white;
+    width: 320px;
+    height: 120px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.form-exit{
+.slider-title {
+    font-weight: 900;
+    font-size: 1em;
+    text-align: center;
+    margin: 10px;
+    color: rgb(0,93,173);
+    letter-spacing: 0.05em;
+    word-spacing: 0.2em;
+}
+.slider-text {
+    font-size: .9em;
+    color: rgb(96,96,96);
+    text-align: center;
+    border-bottom: 1px solid rgb(220,220,220,.6);
+    display: block;
+    padding-bottom: 15px;
+}
+.click-slider {
+    text-align: center;
+    color:  rgb(0,93,173);
+    font-weight: 400;
+    margin-top: 10px;
+}
+.form-input {
+    grid-area: frm-input;
+    background-color: rgb(234,238,243);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgb(0,114,206);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.input-text {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    color: rgb(64,64,64);
+    font-family: poppins, sans-serif;
+    outline: none;
+}
+.icon-smile {
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+.exit-style {
+    background-color: rgb(0,114,206);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.7em;
+    font-family: lato;
+    font-weight: 300;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-exit {
     grid-area: frm-exit;
     display: flex;
     justify-content: flex-end;
 }
-
+.exit-style{
+    cursor: pointer;
+}
 /* .container-chat{
     position: fixed;
     right: 0;

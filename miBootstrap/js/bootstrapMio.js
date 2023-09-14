@@ -30,15 +30,25 @@
 
 // })
 
-let inputNombre = document.getElementById("inputNombre");
-const alertTrigger = document.getElementById("formText");
+// let inputNombre = document.getElementById("inputNombre");
+// const alertTrigger = document.getElementById("formText");
 
-if(alertTrigger) {
-  alertTrigger.addEventListener("click", () =>{
-    if(inputNombre.value == ""){
-      alert('La informacion no puede ir vacia', 'danger');
-    }else{
-      alert('Exito', 'info');
-    }
+// if(alertTrigger) {
+//   alertTrigger.addEventListener("click", () =>{
+//     if(inputNombre.value == ""){
+//       alert('La informacion no puede ir vacia', 'danger');
+//     }else{
+//       alert('Exito', 'info');
+//     }
+//   })
+// }
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
   })
 }

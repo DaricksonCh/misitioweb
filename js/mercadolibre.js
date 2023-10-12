@@ -11,7 +11,7 @@ class Automovil {
 }
 
 let auto1 = new Automovil("Mazda", "CX-3", 64000000, 2023, "Pitalito - Huila", 7600, "img/mercadolibre/mazdacx3.jpg");
-let auto2 = new Automovil("Mazda", "CX-5", 98000000, 2022, "Bogotá - Cundinamarca", 29700, "img/mercadolibre/mazda-cx5.jpg");
+let auto2 = new Automovil("Mazda", "CX-5", 98000000, 2022, "Bogotá - Bogotá", 29700, "img/mercadolibre/mazda-cx5.jpg");
 
 let inputBusqueda = document.getElementById("inputBusqueda");
 let automovilesMostrados = false;
@@ -91,7 +91,7 @@ window.addEventListener("load", function() {
     }
 
     inputBusqueda.addEventListener("keyup", function(event) {
-        if (event.key === "Enter" && !automovilesMostrados) {
+        if (event.key === "Enter" && inputBusqueda.value.toLocaleLowerCase() === "mazda" && !automovilesMostrados) {
             mostrarAutomovil(auto1, auto1.imagenURL);
             mostrarAutomovil(auto2, auto2.imagenURL);
             automovilesMostrados = true;

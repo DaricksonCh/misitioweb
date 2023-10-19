@@ -28,7 +28,7 @@ bodyLeft.addEventListener('click', function () {
     bodyRight.classList.add('body-rightjs');
     iconx.style.color = '#1A2A33'; 
     iconc.style.color = '#A8BFC9'; 
-  } else {
+  }  else {
     bodyLeft.classList.remove('body-leftjs');
     bodyLeft.classList.add('body-circle');
     bodyRight.classList.remove('body-rightjs');

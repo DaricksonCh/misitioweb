@@ -20,3 +20,20 @@ bodyRight.addEventListener('click', function () {
     iconc.style.color = '#1A2A33';
   }
 });
+bodyLeft.addEventListener('click', function () {
+  if (bodyLeft.classList.contains('body-circle')) {
+    bodyLeft.classList.remove('body-circle');
+    bodyLeft.classList.add('body-leftjs');
+    bodyRight.classList.remove('body-x');
+    bodyRight.classList.add('body-rightjs');
+    iconx.style.color = '#1A2A33'; 
+    iconc.style.color = '#A8BFC9'; 
+  } else {
+    bodyLeft.classList.remove('body-leftjs');
+    bodyLeft.classList.add('body-circle');
+    bodyRight.classList.remove('body-rightjs');
+    bodyRight.classList.add('body-x');
+    iconx.style.color = '#A8BFC9';
+    iconc.style.color = '#1A2A33';
+  }
+});

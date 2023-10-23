@@ -37,8 +37,6 @@ bodyLeft.addEventListener('click', function () {
     iconc.style.color = '#1A2A33';
   }
 });
-
-
 function cpu(){
   let timerInterval
   Swal.fire({
@@ -62,4 +60,5 @@ function cpu(){
     }
   })
 }
+
 

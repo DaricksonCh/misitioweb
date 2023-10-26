@@ -20,8 +20,12 @@ const statusDisplay = document.querySelectorAll('.header-turn');
       handleResetGame(); 
     });
   }
-
-  draw = () => Swal.fire('El Juego ha Quedado Empate')
+  draw = () => {
+    Swal.fire('El Juego ha Quedado Empate')
+    .then(() => {
+      handleResetGame(); 
+    });
+  } 
   current_player_turn = () => `${currentPlayer} TURN`
 
   let currentPlayer = 'X';

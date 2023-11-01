@@ -1,62 +1,53 @@
-*{
+* {
   padding: 0;
-  margin:  0;
+  margin: 0;
   box-sizing: border-box;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3%;
+  height: 100vh;
+  width: 100vw;
 }
-.container{
-  background-image: url(../img/ovni/background.jfif);
-  height: 87.5vh;
-  width: 80vw;
-  background-repeat: no-repeat;
+.container {
+  height: 100vh;
+  width: 100vw; 
+  position: relative; 
+  background-image: url(../img/ovni/space.jpeg);
+  background-repeat: repeat-y;
   background-size: cover;
 }
-.aliens{
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  position: relative;
-  cursor: pointer;
+.earth{
+  background-image: url(../img/ovni/5892479.png);
+  height: 22%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute; 
+  bottom: 30px;
+  right: 10px;
 }
-.aliensR{
-  width: 100px;
-  height: 100px;
-  background-color: red;
+.cohete{
+  background-image: url(../img/ovni/Astrounauta_en_cohete.png);
+  height: 25%;
+  width: 12%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+  position: absolute; 
+  bottom: 580px;
+  right: 480px;
+  transition: all .9s ease; 
 }
-.container-alien1{
-  top: 12%;
-  left: 49.5%;
+@media only screen and (max-width: 1366px) {
+  .cohete {
+    bottom: 150px;
+    right: 150px;
+    transition: all .9s ease; 
+  }
 }
-.container-alien2{
-  top: 12%;
-  left: 89.5%;
-}
-.container-alien3{
-  top: 15%;
-  left: 68%;
-}
-.container-alien4{
-  top: 15%;
-  left: 80.5%;
-}
-.container-alien5{
-  top: 8%;
-  left: 73.5%;
-}
-.container-alien6{
-  top: -10%;
-  left: 34%;
-}
-.container-alien7{
-  top: -50%;
-  left: 22%;
-}
-.container-alien8{
-  top: -90%;
-  left: 5%;
+@media only screen and (max-width: 805px) {
+  .cohete {
+    bottom: -150px;
+    right: -50px;
+    transition: all .9s ease; 
+  }
 }

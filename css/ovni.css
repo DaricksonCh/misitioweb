@@ -4,16 +4,26 @@
   box-sizing: border-box;
 }
 body {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .container {
   height: 100vh;
   width: 100vw; 
   position: relative; 
-  background-image: url(../img/ovni/space.jpeg);
   background-repeat: repeat-y;
   background-size: cover;
+  background-image: url(../img/ovni/space.jpeg);
+}
+@keyframes earth {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .earth{
   background-image: url(../img/ovni/5892479.png);
@@ -24,6 +34,17 @@ body {
   position: absolute; 
   bottom: 30px;
   right: 10px;
+}
+.earth2{
+  background-image: url(../img/ovni/5892479.png);
+  height: 22%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute; 
+  bottom: 30px;
+  right: 10px;
+  animation:  earth 5s infinite;
 }
 .cohete{
   background-image: url(../img/ovni/Astrounauta_en_cohete.png);

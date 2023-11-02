@@ -33,8 +33,8 @@ body {
   background-size: cover;
   transform: scaleX(-1);
   position: absolute; 
-  bottom: 580px;
-  right: 480px;
+  bottom: 120px;
+  right: 125px;
   transition: all .9s ease; 
 }
 @media only screen and (max-width: 1366px) {

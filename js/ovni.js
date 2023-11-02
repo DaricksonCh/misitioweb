@@ -31,4 +31,5 @@ window.addEventListener("keydown", (e) => {
     cohete.style.left = cohetePositionWidth + "vh";
     cohete.style.transform = 'scaleX(1)';
   }
+  
 });

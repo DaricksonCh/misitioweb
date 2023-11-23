@@ -67,6 +67,6 @@ input[type="submit"] {
 .container-graphic progress{
   height: 60px;
 }
-.graphicBackground[value]{
-  background-color: yellow;
+.graphicBackground{
+  color: yellow;
 }

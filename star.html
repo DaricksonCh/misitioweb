@@ -9,7 +9,7 @@
 </head>
 <body>
   <main>
-    <form action="" id="formStar">
+    <form action="" id="formStar" class="formStar">
       <label for="star">Escriba el valor de la estrella1</label>
       <input type="text" placeholder="Calificacion" class="calification">
       <label for="star">Escriba el valor de la estrella2</label>
@@ -21,8 +21,30 @@
       <label for="star">Escriba el valor de la estrella5</label>
       <input type="text" placeholder="Calificacion"   class="calification">
       <input type="submit">
+      <div id="starElement"></div>
     </form>
-    <div id="starElement"></div>
+    <div>
+      <form class="formPoint" id="formPoint">
+        <label for="star">Valor</label>
+        <input type="text" placeholder="Puntuacion" class="point">
+        <label for="star">Valor</label>
+        <input type="text" placeholder="Puntuacion" class="point">
+        <label for="star">Valor</label>
+        <input type="text" placeholder="Puntuacion" class="point">
+        <label for="star">Valor</label>
+        <input type="text" placeholder="Puntuacion" class="point">
+        <label for="star">Valor</label>
+        <input type="text" placeholder="Puntuacion" class="point">
+        <input type="submit">
+        <div id="pointElemet" class="container-graphic">
+          <progress value="0" max="100" class="progress"></progress>
+          <progress value="0" max="100" class="progress"></progress>
+          <progress value="0" max="100" class="progress"></progress>
+          <progress value="0" max="100" class="progress"></progress>
+          <progress value="0" max="100" class="progress"></progress>
+        </div>
+      </form>
+    </div>
   </main>
 
 

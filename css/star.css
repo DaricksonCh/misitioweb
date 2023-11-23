@@ -25,9 +25,10 @@ label {
   font-weight: bold;
 }
 
-.calification {
+.calification, .point {
   padding: 8px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 input[type="submit"] {
@@ -53,4 +54,19 @@ input[type="submit"] {
   color: #ccc;
   font-size: 24px;
   margin-right: 5px;
+}
+.formStar,.formPoint{
+  border: 2px solid rgb(0, 123, 255);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.container-graphic{
+  display: grid;
+}
+.container-graphic progress{
+  height: 60px;
+}
+.graphicBackground[value]{
+  background-color: yellow;
 }

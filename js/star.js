@@ -107,3 +107,23 @@ formStar.addEventListener("submit", function (e) {
   starElement.innerHTML = starsHTML + `${promedioFullStars} de 5`;
 });
 
+  
+let formPoint = document.getElementById('formPoint');
+let progress = document.querySelectorAll('.progress');
+
+formPoint.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let value = 0;
+  formPoint.querySelectorAll('.point').forEach((pointInput,i) => {
+    let pointValue = parseFloat(pointInput.value);
+    if(pointValue < 0 || pointValue > 100){
+      alert(`Ingrese valor entre 0 a 100, fallo en el input ${i + 1} por lo que no se graficaran`);
+      return;
+    }else{
+      value += pointValue;
+      progress[i].value = pointValue;
+      progress[i].classList.add('graphicBackground')
+    }
+  });
+});
+
